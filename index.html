@@ -19,31 +19,56 @@
 </header>
 
 <main>
+
+  <!-- HERO -->
   <section class="hero">
     <h2 class="hero-title">Bienvenue sur Florivibes ✨</h2>
     <p class="hero-subtitle">
-      Des formations créatives et humaines.
+      Des formations créatives, humaines et inspirantes.
     </p>
     <button class="btn" onclick="showFormations()">Voir les formations</button>
   </section>
 
-  <!-- SECTION FORMATIONS -->
+  <!-- FORMATIONS -->
   <section id="formations-section" class="formations hidden">
     <h3>Nos formations</h3>
 
     <div class="cards">
-      <div class="card">Organisation événementielle</div>
-      <div class="card">Aptitude à la scène</div>
-      <div class="card">Communication événementielle</div>
+      <div class="card" onclick="openPopup(1)">
+        <h4>Organisation événementielle</h4>
+        <p>De l’idée à la réalisation</p>
+      </div>
+
+      <div class="card" onclick="openPopup(2)">
+        <h4>Aptitude à la scène</h4>
+        <p>Confiance et prise de parole</p>
+      </div>
+
+      <div class="card" onclick="openPopup(3)">
+        <h4>Communication événementielle</h4>
+        <p>Promouvoir efficacement</p>
+      </div>
     </div>
   </section>
+
 </main>
+
+<!-- POPUP -->
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">×</span>
+    <div id="popup-text"></div>
+  </div>
+</div>
 
 <footer>
   © 2024 Florivibes
 </footer>
 
 <script src="script.js"></script>
+</body>
+</html>
+
 
 
      
