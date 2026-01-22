@@ -3,104 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Accueil - Florivibes</title>
+  <title>Florivibes</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <h1 class="logo">Florivibes</h1>
-    <nav>
-      <a href="index.html" class="nav-link active">Accueil</a>
-      <a href="formations.html" class="nav-link">Formations</a>
-      <a href="entreprise.html" class="nav-link">Entreprise</a>
-      <a href="contact.html" class="nav-link">Contact</a>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <h2 class="hero-title">Bienvenue sur Florivibes 🌈✨</h2>
-      <p class="hero-subtitle">
-        Des formations fun, colorées et adaptées aux adultes qui veulent se perfectionner ou se reconvertir.
-      </p>
-      <button class="btn" onclick="showFormations()">Voir les formations</button>
-    </section>
+<body>
+
+<header>
+  <h1 class="logo">Florivibes</h1>
+  <nav>
+    <a href="#" class="nav-link active">Accueil</a>
+    <a href="#" class="nav-link">Formations</a>
+    <a href="#" class="nav-link">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h2 class="hero-title">Bienvenue sur Florivibes ✨</h2>
+    <p class="hero-subtitle">
+      Des formations fun, colorées et adaptées aux adultes.
+    </p>
+    <button class="btn" onclick="showFormations()">Voir les formations</button>
+  </section>
 
   <section id="formations-section" class="formations hidden">
-  <h3>Nos formations disponibles</h3>
+    <h3>Nos formations</h3>
 
-  <div class="cards">
-    <div class="card pack" data-pack="1">
-      <img src="images/pack1.jpg" alt="Organisation événementielle">
-      <h4>Pack 1 : Organisation événementielle</h4>
-      <p>Planification, budget, logistique</p>
-      <button class="btn open-modal">Voir le programme</button>
+    <div class="cards">
+      <div class="card">Organisation événementielle</div>
+      <div class="card">Aptitude à la scène</div>
+      <div class="card">Communication événementielle</div>
     </div>
+  </section>
+</main>
 
-    <div class="card pack" data-pack="2">
-      <img src="images/pack2.jpg" alt="Aptitude à la scène">
-      <h4>Pack 2 : Aptitude à la scène</h4>
-      <p>Prise de parole, gestuelle, voix</p>
-      <button class="btn open-modal">Voir le programme</button>
-    </div>
+<footer>
+  © 2024 Florivibes
+</footer>
 
-    <div class="card pack" data-pack="3">
-      <img src="images/pack3.jpg" alt="Communication événementielle">
-      <h4>Pack 3 : Communication événementielle</h4>
-      <p>Stratégie, réseaux sociaux, relations presse</p>
-      <button class="btn open-modal">Voir le programme</button>
-    </div>
-
-    <div class="card pack" data-pack="4">
-      <img src="images/pack4.jpg" alt="Gestion de projet">
-      <h4>Pack 4 : Gestion de projet</h4>
-      <p>Risques, planning, suivi</p>
-      <button class="btn open-modal">Voir le programme</button>
-    </div>
-  </div>
-</section>
-
-      <h3>Nos formations disponibles</h3>
-
-      <div class="cards">
-        <div class="card" onclick="showDetails('formation1')">
-          <h4>Formation Web</h4>
-          <p>Créer un site moderne et responsive.</p>
-        </div>
-        <div class="card" onclick="showDetails('formation2')">
-          <h4>Formation Marketing</h4>
-          <p>Réussir sur Instagram et Facebook.</p>
-        </div>
-        <div class="card" onclick="showDetails('formation3')">
-          <h4>Formation Gestion</h4>
-          <p>Organiser et gérer une entreprise efficacement.</p>
-        </div>
-      </div>
-      <h3>Nos formations disponibles</h3>
-
-      <div class="cards">
-        <div class="card" onclick="showDetails('formation1')">
-          <h4>Formation Web</h4>
-          <p>Créer un site moderne et responsive.</p>
-        </div>
-        <div class="card" onclick="showDetails('formation2')">
-          <h4>Formation Marketing</h4>
-          <p>Réussir sur Instagram et Facebook.</p>
-        </div>
-        <div class="card" onclick="showDetails('formation3')">
-          <h4>Formation Gestion</h4>
-          <p>Organiser et gérer une entreprise efficacement.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2024 Florivibes - Tous droits réservés</p>
-  </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
+
 
      
