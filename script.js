@@ -1,6 +1,17 @@
 function showFormations() {
   const section = document.getElementById("formations-section");
-  section.classList.remove("hidden");
-  section.scrollIntoView({ behavior: "smooth" });
-}
 
+  if (!section) {
+    console.error("Section formations introuvable");
+    return;
+  }
+
+  section.classList.remove("hidden");
+
+  setTimeout(() => {
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }, 100);
+}
