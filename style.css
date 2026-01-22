@@ -1,12 +1,9 @@
-/* ===============================
-   BODY – DÉGRADÉ PASTEL ANIMÉ
-================================ */
-
+/* ===== BASE ===== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  overflow-x: hidden;
   color: white;
+  overflow-x: hidden;
 
   background: linear-gradient(
     120deg,
@@ -16,68 +13,43 @@ body {
     #c9d8a8
   );
   background-size: 400% 400%;
-  animation: pastelMove 12s ease infinite;
+  animation: bgMove 10s ease infinite;
 }
 
-/* ===============================
-   PAILLETTES DOUCES
-================================ */
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-
-  background-image:
-    radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1px),
-    radial-gradient(circle, rgba(255,255,255,0.5) 1px, transparent 1px);
-
-  background-size:
-    140px 140px,
-    220px 220px;
-
-  opacity: 0.4;
-  mix-blend-mode: screen;
-}
-
-/* ===============================
-   ANIMATION DU FOND
-================================ */
-
-@keyframes pastelMove {
+/* ===== ANIMATION ===== */
+@keyframes bgMove {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* ===============================
-   HEADER
-================================ */
+/* ===== PAILLETTES ===== */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,0.6) 1px, transparent 1px);
+  background-size: 120px 120px;
+  opacity: 0.4;
+}
 
+/* ===== HEADER ===== */
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 20px 40px;
-  position: sticky;
-  top: 0;
   background: rgba(255,255,255,0.15);
   backdrop-filter: blur(10px);
-  z-index: 10;
 }
 
 .logo {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: bold;
-  letter-spacing: 1px;
-  text-shadow: 0 4px 20px rgba(0,0,0,0.25);
 }
 
-/* ===============================
-   NAVIGATION (POP)
-================================ */
-
+/* ===== NAV ===== */
 nav {
   display: flex;
   gap: 20px;
@@ -86,105 +58,73 @@ nav {
 .nav-link {
   color: white;
   text-decoration: none;
-  font-weight: 600;
-  padding: 10px 16px;
-  border-radius: 999px;
-  transition: all 0.25s ease;
+  padding: 8px 14px;
+  border-radius: 20px;
 }
 
 .nav-link:hover {
-  background: rgba(255,255,255,0.35);
-  transform: translateY(-3px) scale(1.05);
+  background: rgba(255,255,255,0.3);
 }
 
-.nav-link.active {
-  background: rgba(255,255,255,0.45);
-}
-
-/* ===============================
-   HERO
-================================ */
-
+/* ===== HERO ===== */
 .hero {
   text-align: center;
-  padding: 120px 20px 60px;
+  padding: 100px 20px;
 }
 
 .hero-title {
-  font-size: 46px;
-  margin: 0;
-  text-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  font-size: 42px;
 }
 
 .hero-subtitle {
-  font-size: 20px;
-  max-width: 760px;
-  margin: 30px auto;
-  line-height: 1.6;
+  font-size: 18px;
+  max-width: 600px;
+  margin: 20px auto;
 }
 
-/* ===============================
-   BOUTON
-================================ */
-
+/* ===== BOUTON ===== */
 .btn {
-  padding: 16px 36px;
+  padding: 14px 30px;
   border: none;
   border-radius: 999px;
-  font-size: 17px;
-  font-weight: 700;
+  font-size: 16px;
   cursor: pointer;
-  background: rgba(255,255,255,0.85);
+  background: white;
   color: #333;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-  transition: all 0.25s ease;
 }
 
 .btn:hover {
-  transform: translateY(-4px) scale(1.06);
-  box-shadow: 0 20px 45px rgba(0,0,0,0.35);
+  transform: scale(1.05);
 }
 
-/* ===============================
-   FORMATIONS
-================================ */
-
+/* ===== FORMATIONS ===== */
 .formations {
-  padding: 60px 20px;
   text-align: center;
+  padding: 40px;
 }
 
 .cards {
   display: flex;
+  gap: 20px;
   justify-content: center;
-  gap: 24px;
-  flex-wrap: wrap;
-  margin-top: 30px;
 }
 
 .card {
-  width: 260px;
-  padding: 26px;
-  border-radius: 26px;
-  background: rgba(255,255,255,0.25);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 14px 35px rgba(0,0,0,0.25);
-  cursor: pointer;
-  transition: all 0.3s ease;
+  background: rgba(255,255,255,0.3);
+  padding: 20px;
+  border-radius: 20px;
+  width: 200px;
 }
 
-.card:hover {
-  transform: translateY(-10px) scale(1.05);
-  background: rgba(255,255,255,0.35);
+/* ===== UTILE AU JS ===== */
+.hidden {
+  display: none;
 }
 
-/* ===============================
-   FOOTER
-================================ */
-
+/* ===== FOOTER ===== */
 footer {
   text-align: center;
   padding: 20px;
-  background: rgba(255,255,255,0.2);
-  font-size: 14px;
+  background: rgba(255,255,255,0.15);
 }
+
