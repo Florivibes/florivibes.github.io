@@ -2,7 +2,8 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Formations - Florivibes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formations – Florivibes</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,8 +14,8 @@
   <nav>
     <a href="index.html" class="nav-link">Accueil</a>
     <a href="formations.html" class="nav-link active">Formations</a>
-    <a href="entreprise.html" class="nav-link">Entreprise</a>
-    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="#" class="nav-link">Entreprise</a>
+    <a href="#" class="nav-link">Contact</a>
   </nav>
 </header>
 
@@ -24,42 +25,42 @@
   <section class="hero hero-formations">
     <h2 class="hero-title">Nos packs de formation</h2>
     <p class="hero-subtitle">
-      Trois parcours structurés pour développer vos compétences
-      et révéler votre potentiel professionnel.
+      Trois parcours structurés, conformes Qualiopi, pour développer
+      vos compétences professionnelles.
     </p>
   </section>
 
   <!-- PACKS -->
-  <section class="packs">
+  <section class="packs cards">
 
     <!-- PACK 1 -->
-    <div class="pack-card">
+    <div class="card pack-card">
       <div class="pack-badge">Pack Essentiel</div>
       <h3>Organisation événementielle</h3>
       <p class="pack-desc">
-        Les bases solides pour concevoir et organiser un événement
-        professionnel de A à Z.
+        Concevoir et piloter un événement professionnel de A à Z.
       </p>
 
       <ul class="pack-list">
         <li>Conception & logistique</li>
-        <li>Gestion du budget</li>
-        <li>Planning & coordination</li>
+        <li>Budget & planning</li>
+        <li>Coordination des prestataires</li>
       </ul>
 
       <div class="pack-footer">
-        <span class="pack-info">5 jours • Débutant</span>
-        <button class="btn">Voir le programme</button>
+        <span class="pack-info">35h • 5 jours</span>
+        <button class="btn" onclick="openPopup('event')">
+          Voir le programme
+        </button>
       </div>
     </div>
 
     <!-- PACK 2 -->
-    <div class="pack-card featured">
+    <div class="card pack-card featured">
       <div class="pack-badge gold">Pack Signature</div>
       <h3>Aptitude à la scène</h3>
       <p class="pack-desc">
-        Développer son aisance orale, son impact et sa confiance
-        dans un cadre professionnel.
+        Développer son aisance orale et sa présence professionnelle.
       </p>
 
       <ul class="pack-list">
@@ -69,29 +70,32 @@
       </ul>
 
       <div class="pack-footer">
-        <span class="pack-info">4 jours • Tous niveaux</span>
-        <button class="btn">Voir le programme</button>
+        <span class="pack-info">21h • 3 jours</span>
+        <button class="btn" onclick="openPopup('scene')">
+          Voir le programme
+        </button>
       </div>
     </div>
 
     <!-- PACK 3 -->
-    <div class="pack-card">
+    <div class="card pack-card">
       <div class="pack-badge">Pack Expert</div>
       <h3>Communication événementielle</h3>
       <p class="pack-desc">
-        Construire une stratégie de communication efficace
-        avant, pendant et après l’événement.
+        Construire une stratégie de communication performante.
       </p>
 
       <ul class="pack-list">
-        <li>Stratégie & branding</li>
+        <li>Branding & storytelling</li>
         <li>Réseaux sociaux</li>
         <li>Relations presse</li>
       </ul>
 
       <div class="pack-footer">
-        <span class="pack-info">6 jours • Avancé</span>
-        <button class="btn">Voir le programme</button>
+        <span class="pack-info">28h • 4 jours</span>
+        <button class="btn" onclick="openPopup('com')">
+          Voir le programme
+        </button>
       </div>
     </div>
 
@@ -103,6 +107,16 @@
   <p>© 2024 Florivibes – Organisme de formation</p>
 </footer>
 
+<!-- POPUP PROGRAMME -->
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">×</span>
+    <div id="popup-body"></div>
+  </div>
+</div>
+
+<!-- SCRIPT -->
+<script src="script.js"></script>
+
 </body>
 </html>
-
