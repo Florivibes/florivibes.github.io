@@ -1,26 +1,4 @@
-/* =====================================================
-   PALETTE FLORIVIBES – DOUCE / PRO / ANIMÉE
-===================================================== */
-
-:root {
-  --bleu-profond: #2f4f6f;
-  --bleu-doux: #5f86a6;
-  --bleu-clair: #8fb2cc;
-
-  --rose-poudre: #cfa3b5;
-  --rose-clair: #f3c6d3;
-
-  --beige-dore: #e8d6c3;
-  --or-doux: #d8b87a;
-
-  --blanc-verre: rgba(255,255,255,0.18);
-  --blanc-verre-hover: rgba(255,255,255,0.28);
-}
-
-/* =====================================================
-   BODY – FOND ANIMÉ + PAILLETTES
-===================================================== */
-
+/* ===== FOND ANIMÉ DOUX (BLEU + ROSE DORÉ) ===== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -28,4 +6,20 @@ body {
   color: white;
 
   background:
-    radial-gradient(circle at 20% 20%, var(--rose-clair), transparent 45%),
+    radial-gradient(circle at 20% 20%, #e8c6b8, transparent 50%),
+    radial-gradient(circle at 80% 30%, #6f8fae, transparent 50%),
+    radial-gradient(circle at 50% 80%, #f1ddc9, transparent 50%),
+    linear-gradient(
+      135deg,
+      #2f4f6f,
+      #5f7f9e,
+      #cfa89a,
+      #e8d2b8
+    );
+
+  background-size: 350% 350%;
+  animation: rainbow 12s ease infinite;
+}
+
+/* ===== PAILLETTES FINES ===== */
+body::befo
