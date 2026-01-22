@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Florivibes</title>
+  <title>Florivibes – Organisme de formation</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,9 +12,9 @@
 <header>
   <h1 class="logo">Florivibes</h1>
   <nav>
-    <a href="#" class="nav-link active">Accueil</a>
-    <a href="#" class="nav-link">Formations</a>
-    <a href="#" class="nav-link">Contact</a>
+    <a href="index.html" class="nav-link active">Accueil</a>
+    <a href="#formations-section" class="nav-link">Formations</a>
+    <a href="#contact" class="nav-link">Contact</a>
   </nav>
 </header>
 
@@ -22,52 +22,53 @@
 
   <!-- HERO -->
   <section class="hero">
-    <h2 class="hero-title">Bienvenue sur Florivibes ✨</h2>
+    <h2 class="hero-title">Formations créatives & professionnelles ✨</h2>
     <p class="hero-subtitle">
-      Des formations créatives, humaines et inspirantes.
+      Florivibes est un organisme de formation dédié aux adultes en reconversion,
+      aux entrepreneurs et aux professionnels souhaitant développer leurs compétences
+      dans l’événementiel, la communication et la prise de parole.
     </p>
-    <button class="btn" onclick="showFormations()">Voir les formations</button>
+
+    <button class="btn" onclick="showFormations()">
+      Découvrir nos formations
+    </button>
   </section>
 
   <!-- FORMATIONS -->
   <section id="formations-section" class="formations hidden">
-    <h3>Nos formations</h3>
+    <h3>Nos formations certifiantes</h3>
 
     <div class="cards">
-      <div class="card" onclick="openPopup(1)">
+      <div class="card" onclick="openPopup('event')">
         <h4>Organisation événementielle</h4>
-        <p>De l’idée à la réalisation</p>
+        <p>Concevoir et piloter un événement</p>
       </div>
 
-      <div class="card" onclick="openPopup(2)">
+      <div class="card" onclick="openPopup('scene')">
         <h4>Aptitude à la scène</h4>
-        <p>Confiance et prise de parole</p>
+        <p>Aisance orale & présence</p>
       </div>
 
-      <div class="card" onclick="openPopup(3)">
+      <div class="card" onclick="openPopup('com')">
         <h4>Communication événementielle</h4>
-        <p>Promouvoir efficacement</p>
+        <p>Stratégie & visibilité</p>
       </div>
     </div>
   </section>
 
 </main>
 
-<!-- POPUP -->
-<div id="popup" class="popup hidden">
-  <div class="popup-content">
-    <span class="close" onclick="closePopup()">×</span>
-    <div id="popup-text"></div>
-  </div>
-</div>
-
-<footer>
-  © 2024 Florivibes
+<footer id="contact">
+  <p>
+    © 2024 Florivibes – Organisme de formation<br>
+    Contact : florivibes@gmail.com
+  </p>
 </footer>
 
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
