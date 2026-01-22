@@ -1,18 +1,18 @@
-/* ===== RESET ===== */
+/* ===== BASE ===== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  overflow-x: hidden;
   color: white;
+  overflow-x: hidden;
 
   background:
-    radial-gradient(circle at 20% 20%, #f6c1d1, transparent 50%),
-    radial-gradient(circle at 80% 30%, #6bb7c9, transparent 50%),
-    radial-gradient(circle at 50% 80%, #f3d8a8, transparent 50%),
-    linear-gradient(135deg, #cfa56a, #e6b7c9, #9fc6d3, #cfa56a);
+    radial-gradient(circle at 20% 20%, #f2c4d8, transparent 50%),
+    radial-gradient(circle at 80% 30%, #9fc6d3, transparent 50%),
+    radial-gradient(circle at 50% 80%, #f1d7b5, transparent 50%),
+    linear-gradient(135deg, #c9a26d, #e6b7c9, #9fc6d3, #c9a26d);
 
   background-size: 400% 400%;
-  animation: flow 12s ease infinite;
+  animation: flow 14s ease infinite;
 }
 
 /* ===== ANIMATION FOND ===== */
@@ -104,7 +104,7 @@ nav {
 
 /* ===== FORMATIONS ===== */
 .formations {
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
@@ -113,19 +113,56 @@ nav {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 .card {
-  width: 220px;
+  width: 240px;
   padding: 20px;
   border-radius: 20px;
   background: rgba(255,255,255,0.2);
   box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  cursor: pointer;
   transition: transform 0.3s;
 }
 
 .card:hover {
   transform: translateY(-8px);
+}
+
+/* ===== POPUP ===== */
+.popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: rgba(255,255,255,0.95);
+  color: #333;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 420px;
+  width: 90%;
+  position: relative;
+  animation: pop 0.3s ease;
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+@keyframes pop {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
 
 /* ===== FOOTER ===== */
@@ -137,5 +174,5 @@ footer {
 
 /* ===== UTIL ===== */
 .hidden {
-  display: none;
+  display: none !important;
 }
