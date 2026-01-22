@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accueil - Florivibes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="logo">Florivibes</h1>
+    <nav>
+      <a href="index.html" class="nav-link active">Accueil</a>
+      <a href="formations.html" class="nav-link">Formations</a>
+      <a href="entreprise.html" class="nav-link">Entreprise</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2 class="hero-title">Bienvenue sur Florivibes 🌈✨</h2>
+      <p class="hero-subtitle">
+        Des formations fun, colorées et adaptées aux adultes qui veulent se perfectionner ou se reconvertir.
+      </p>
+      <button class="btn" onclick="showFormations()">Voir les formations</button>
+    </section>
+
+    <section id="formations-section" class="formations hidden">
+      <h3>Nos formations disponibles</h3>
+
+      <div class="cards">
+        <div class="card" onclick="showDetails('formation1')">
+          <h4>Formation Web</h4>
+          <p>Créer un site moderne et responsive.</p>
+        </div>
+        <div class="card" onclick="showDetails('formation2')">
+          <h4>Formation Marketing</h4>
+          <p>Réussir sur Instagram et Facebook.</p>
+        </div>
+        <div class="card" onclick="showDetails('formation3')">
+          <h4>Formation Gestion</h4>
+          <p>Organiser et gérer une entreprise efficacement.</p>
+        </div>
+      </div>
+
+      <!-- POPUPS
