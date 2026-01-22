@@ -26,7 +26,40 @@
       <button class="btn" onclick="showFormations()">Voir les formations</button>
     </section>
 
-    <section id="formations-section" class="formations hidden">
+  <section id="formations-section" class="formations hidden">
+  <h3>Nos formations disponibles</h3>
+
+  <div class="cards">
+    <div class="card pack" data-pack="1">
+      <img src="images/pack1.jpg" alt="Organisation événementielle">
+      <h4>Pack 1 : Organisation événementielle</h4>
+      <p>Planification, budget, logistique</p>
+      <button class="btn open-modal">Voir le programme</button>
+    </div>
+
+    <div class="card pack" data-pack="2">
+      <img src="images/pack2.jpg" alt="Aptitude à la scène">
+      <h4>Pack 2 : Aptitude à la scène</h4>
+      <p>Prise de parole, gestuelle, voix</p>
+      <button class="btn open-modal">Voir le programme</button>
+    </div>
+
+    <div class="card pack" data-pack="3">
+      <img src="images/pack3.jpg" alt="Communication événementielle">
+      <h4>Pack 3 : Communication événementielle</h4>
+      <p>Stratégie, réseaux sociaux, relations presse</p>
+      <button class="btn open-modal">Voir le programme</button>
+    </div>
+
+    <div class="card pack" data-pack="4">
+      <img src="images/pack4.jpg" alt="Gestion de projet">
+      <h4>Pack 4 : Gestion de projet</h4>
+      <p>Risques, planning, suivi</p>
+      <button class="btn open-modal">Voir le programme</button>
+    </div>
+  </div>
+</section>
+
       <h3>Nos formations disponibles</h3>
 
       <div class="cards">
@@ -43,5 +76,31 @@
           <p>Organiser et gérer une entreprise efficacement.</p>
         </div>
       </div>
+      <h3>Nos formations disponibles</h3>
 
-      <!-- POPUPS
+      <div class="cards">
+        <div class="card" onclick="showDetails('formation1')">
+          <h4>Formation Web</h4>
+          <p>Créer un site moderne et responsive.</p>
+        </div>
+        <div class="card" onclick="showDetails('formation2')">
+          <h4>Formation Marketing</h4>
+          <p>Réussir sur Instagram et Facebook.</p>
+        </div>
+        <div class="card" onclick="showDetails('formation3')">
+          <h4>Formation Gestion</h4>
+          <p>Organiser et gérer une entreprise efficacement.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Florivibes - Tous droits réservés</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+     
