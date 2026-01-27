@@ -118,69 +118,30 @@ function openPopup(type) {
     `,
 
     boost: `
-      <h4>Plan de formation</h4>
+      <h4>Organiser un événement musical</h4>
 
-      <p><strong>Titre :</strong> Organiser un événement musical</p>
       <p><strong>Durée :</strong> 8 heures (1 journée)</p>
-      <p><strong>Format :</strong> en présentiel ou en ligne interactif</p>
+      <p><strong>Format :</strong> Présentiel ou en ligne interactif</p>
       <p><strong>Tarif proposé :</strong> 300 €/participant</p>
       <p><strong>Public visé :</strong> artistes, managers, organisateurs d’événements, indépendants du secteur musical</p>
 
-      <h4>🎯 Objectifs pédagogiques</h4>
-      <p>À l’issue de la formation, le stagiaire sera capable de :</p>
-      <ol>
-        <li>Définir clairement ses objectifs pour un événement musical ou une sortie d’album.</li>
-        <li>Construire un plan de communication efficace (avant, pendant, après).</li>
-        <li>Gérer les aspects pratiques de la production d’un événement (budget, lieux, équipe).</li>
-        <li>Créer un calendrier de production adapté à la sortie de l’album.</li>
-        <li>Évaluer les résultats de l’événement et capitaliser sur l’expérience.</li>
-      </ol>
-
-      <h4>📋 Programme détaillé (8 h)</h4>
-
-      <p><strong>🕐 Module 1 – Introduction (0h30)</strong></p>
+      <p><strong>Objectifs pédagogiques :</strong></p>
       <ul>
-        <li>Présentation de la formation et de ses objectifs</li>
-        <li>Attentes des participants</li>
-        <li>Tour de table rapide des projets personnels</li>
+        <li>Définir les objectifs d’un événement musical ou d’une sortie d’album</li>
+        <li>Construire un plan de communication avant, pendant et après</li>
+        <li>Organiser la production (budget, lieux, équipe)</li>
+        <li>Créer un calendrier de production</li>
+        <li>Évaluer les résultats et capitaliser sur l’expérience</li>
       </ul>
 
-      <p><strong>🧭 Module 2 – Fondamentaux de l’événement musical (1h30)</strong></p>
+      <p><strong>Programme (8h) :</strong></p>
       <ul>
-        <li>Types d’événements musicaux (concerts, showcases…)</li>
-        <li>Cadre légal et obligations basiques (assurances, sécurité)</li>
-        <li>Identification du public cible</li>
-      </ul>
-      <p><em>Méthode pédagogique : exposé + Q&A</em></p>
-
-      <p><strong>📅 Module 3 – Stratégie & planification (2h)</strong></p>
-      <ul>
-        <li>Définir la vision et les objectifs de l’événement</li>
-        <li>Construire un rétroplanning et un budget</li>
-        <li>Outils simples de gestion de projet</li>
-      </ul>
-      <p><em>Méthode : ateliers pratiques en petits groupes + livrables concrets</em></p>
-
-      <p><strong>📢 Module 4 – Communication & promotion (2h)</strong></p>
-      <ul>
-        <li>Stratégie de communication adaptée à une sortie d’album</li>
-        <li>Utilisation des réseaux sociaux, e-mailing, newsletters</li>
-        <li>Relations presse, partenariats locaux et médias</li>
-      </ul>
-      <p><em>Méthode : cas pratiques, exemples réels, outils à utiliser</em></p>
-
-      <p><strong>📊 Module 5 – Immersion & évaluation (1h)</strong></p>
-      <ul>
-        <li>Mise en situation / étude de cas</li>
-        <li>Retour d’expérience collaboratif</li>
-        <li>Évaluation sous forme de QCM ou livrable (plan de communication + planning)</li>
-      </ul>
-
-      <p><strong>🧾 Module 6 – Clôture (1h)</strong></p>
-      <ul>
-        <li>Synthèse des acquis</li>
-        <li>Feedback des participants</li>
-        <li>Remise d’une attestation de formation</li>
+        <li>Introduction & attentes (0h30)</li>
+        <li>Fondamentaux de l’événement musical (1h30)</li>
+        <li>Stratégie & planification (2h)</li>
+        <li>Communication & promotion (2h)</li>
+        <li>Immersion & évaluation (1h)</li>
+        <li>Clôture & attestation (1h)</li>
       </ul>
     `
   };
