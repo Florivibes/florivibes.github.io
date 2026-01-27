@@ -6,17 +6,20 @@
   <title>Entreprise – Florivibes</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-<header>
+<body data-header="assets/images/header-entreprise.jpg">
+
+<header id="main-header">
   <h1 class="logo">Florivibes</h1>
   <nav>
     <a href="index.html" class="nav-link">Accueil</a>
     <a href="formations.html" class="nav-link">Formations</a>
     <a href="entreprise.html" class="nav-link active">Entreprise</a>
-    <a href="#" class="nav-link">Contact</a>
+    <a href="#contact" class="nav-link">Contact</a>
   </nav>
 </header>
+
+<div class="entreprise-sparkles"></div>
 
 <main>
   <section class="hero hero-formations">
@@ -28,8 +31,8 @@
     </p>
   </section>
 
-  <section class="packs cards">
-    <div class="card">
+  <section class="entreprise-content">
+    <div class="content-card">
       <h3>Pourquoi choisir Florivibes ?</h3>
       <p>
         ✔ Formations personnalisées<br>
@@ -38,12 +41,57 @@
         ✔ Financement possible via OPCO selon votre situation
       </p>
     </div>
+
+    <div class="content-card">
+      <h3>Micro-entreprises & indépendants</h3>
+      <p>
+        Idéal pour les artistes, managers, organisateurs, indépendants qui souhaitent se professionnaliser
+        et gagner en visibilité.
+      </p>
+    </div>
+
+    <div class="content-card">
+      <h3>Structures & entreprises</h3>
+      <p>
+        Labels, salles de concerts, associations, collectifs : nous adaptons la formation à vos besoins
+        et à votre équipe.
+      </p>
+    </div>
+
+    <div class="content-card">
+      <h3>Ce que vous obtenez</h3>
+      <p>
+        Formation sur-mesure, outils pratiques, attestation, accompagnement projet.
+      </p>
+    </div>
+
+    <div class="content-card">
+      <h3>Financement & devis</h3>
+      <p>
+        Possibilité de prise en charge selon votre statut (OPCO, fonds formation).
+        Demandez un devis personnalisé.
+      </p>
+    </div>
   </section>
 </main>
 
-<footer>
-  <p>© 2024 Florivibes – Organisme de formation</p>
+<footer id="contact">
+  <p>
+    © 2024 Florivibes – Organisme de formation<br>
+    Une demande? L'équipe de Florivibes vous répond rapidement à l'adresse mail suivante : contact.florivibes@gmail.com
+  </p>
 </footer>
+
+<script>
+  const header = document.getElementById('main-header');
+  const imgSrc = document.body.getAttribute('data-header') || 'assets/images/header-default.jpg';
+  const imgElement = document.createElement('img');
+  imgElement.src = imgSrc;
+  imgElement.alt = "Bannière";
+  imgElement.className = "header-image";
+  header.prepend(imgElement);
+</script>
 
 </body>
 </html>
+
