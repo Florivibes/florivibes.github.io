@@ -7,15 +7,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-header="assets/images/header-formations.jpg">
 
-<header>
+<header id="main-header">
+  <img class="header-image" alt="Bannière" />
   <h1 class="logo">Florivibes</h1>
   <nav>
     <a href="index.html" class="nav-link">Accueil</a>
     <a href="formations.html" class="nav-link active">Formations</a>
     <a href="#" class="nav-link">Entreprise</a>
-    <a href="#" class="nav-link">Contact</a>
+    <a href="index.html#contact" class="nav-link">Contact</a>
   </nav>
 </header>
 
@@ -94,6 +95,28 @@
       <div class="pack-footer">
         <span class="pack-info">28h • 4 jours</span>
         <button class="btn" onclick="openPopup('com')">
+          Voir le programme
+        </button>
+      </div>
+    </div>
+
+    <!-- PACK 4 (BOOST) -->
+    <div class="card pack-card">
+      <div class="pack-badge">Pack BOOST</div>
+      <h3>Organiser et concevoir un événement musical</h3>
+      <p class="pack-desc">
+        Concevoir et structurer un événement musical de A à Z.
+      </p>
+
+      <ul class="pack-list">
+        <li>Conception du concept musical</li>
+        <li>Production & logistique</li>
+        <li>Communication & billetterie</li>
+      </ul>
+
+      <div class="pack-footer">
+        <span class="pack-info">30h • 4 jours</span>
+        <button class="btn" onclick="openPopup('boost')">
           Voir le programme
         </button>
       </div>
