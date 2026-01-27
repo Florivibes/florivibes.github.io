@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-header="assets/images/header-index.jpg">
 
-<header>
+<header id="main-header">
+  <!-- L'image de header sera injectée ici via JS -->
   <h1 class="logo">Florivibes</h1>
   <nav>
     <a href="index.html" class="nav-link active">Accueil</a>
@@ -42,18 +43,27 @@
     <div class="cards">
 
       <a href="formations.html" class="card">
+        <img src="assets/images/icone-evenement.png" alt="Événement" class="card-icon">
         <h4>Organisation événementielle</h4>
         <p>Concevoir et organiser un événement de A à Z</p>
       </a>
 
       <a href="formations.html" class="card">
+        <img src="assets/images/icone-scene.png" alt="Scène" class="card-icon">
         <h4>Aptitude à la scène</h4>
         <p>Prise de parole, confiance et présence</p>
       </a>
 
       <a href="formations.html" class="card">
+        <img src="assets/images/icone-com.png" alt="Communication" class="card-icon">
         <h4>Communication événementielle</h4>
         <p>Stratégie, réseaux sociaux, visibilité</p>
+      </a>
+
+      <a href="formations.html" class="card">
+        <img src="assets/images/icone-developpement.png" alt="Développement" class="card-icon">
+        <h4>Développement de projets hybrides</h4>
+        <p>Événements musicaux, culturels et mixtes</p>
       </a>
 
     </div>
@@ -67,6 +77,17 @@
     Une demande? L'équipe de Florivibes vous répond rapidement à l'adresse mail suivante : contact.florivibes@gmail.com
   </p>
 </footer>
+
+<!-- Script pour header différent par page -->
+<script>
+  const header = document.getElementById('main-header');
+  const imgSrc = document.body.getAttribute('data-header') || 'assets/images/header-default.jpg';
+  const imgElement = document.createElement('img');
+  imgElement.src = imgSrc;
+  imgElement.alt = "Bannière";
+  imgElement.className = "header-image";
+  header.prepend(imgElement); // Ajoute l'image avant le titre et la nav
+</script>
 
 </body>
 </html>
