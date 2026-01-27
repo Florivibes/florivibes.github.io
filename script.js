@@ -5,6 +5,13 @@ function showFormations() {
   section.classList.remove("hidden");
   section.scrollIntoView({ behavior: "smooth" });
 }
+function showFormations() {
+  const section = document.getElementById("formations-section");
+  if (!section) return;
+
+  section.classList.remove("hidden");
+  section.scrollIntoView({ behavior: "smooth" });
+}
 
 function openPopup(type) {
   const popup = document.getElementById("popup");
@@ -13,6 +20,34 @@ function openPopup(type) {
   if (!popup || !body) return;
 
   const programs = {
+    boost: `
+      <h4>Organiser un événement musical</h4>
+
+      <p><strong>Durée :</strong> 8 heures (1 journée)</p>
+      <p><strong>Format :</strong> Présentiel ou en ligne interactif</p>
+      <p><strong>Tarif proposé :</strong> 300 €/participant</p>
+      <p><strong>Public visé :</strong> artistes, managers, organisateurs d’événements, indépendants du secteur musical</p>
+
+      <p><strong>Objectifs pédagogiques :</strong></p>
+      <ul>
+        <li>Définir les objectifs d’un événement musical ou d’une sortie d’album</li>
+        <li>Construire un plan de communication avant, pendant et après</li>
+        <li>Organiser la production (budget, lieux, équipe)</li>
+        <li>Créer un calendrier de production</li>
+        <li>Évaluer les résultats et capitaliser sur l’expérience</li>
+      </ul>
+
+      <p><strong>Programme (8h) :</strong></p>
+      <ul>
+        <li>Introduction & attentes (0h30)</li>
+        <li>Fondamentaux de l’événement musical (1h30)</li>
+        <li>Stratégie & planification (2h)</li>
+        <li>Communication & promotion (2h)</li>
+        <li>Immersion & évaluation (1h)</li>
+        <li>Clôture & attestation (1h)</li>
+      </ul>
+    `,
+
     event: `
       <h4>Organisation événementielle</h4>
 
@@ -115,34 +150,6 @@ function openPopup(type) {
 
       <p><strong>Accessibilité :</strong><br>
       Formation accessible aux personnes en situation de handicap</p>
-    `,
-
-    boost: `
-      <h4>Organiser un événement musical</h4>
-
-      <p><strong>Durée :</strong> 8 heures (1 journée)</p>
-      <p><strong>Format :</strong> Présentiel ou en ligne interactif</p>
-      <p><strong>Tarif proposé :</strong> 300 €/participant</p>
-      <p><strong>Public visé :</strong> artistes, managers, organisateurs d’événements, indépendants du secteur musical</p>
-
-      <p><strong>Objectifs pédagogiques :</strong></p>
-      <ul>
-        <li>Définir les objectifs d’un événement musical ou d’une sortie d’album</li>
-        <li>Construire un plan de communication avant, pendant et après</li>
-        <li>Organiser la production (budget, lieux, équipe)</li>
-        <li>Créer un calendrier de production</li>
-        <li>Évaluer les résultats et capitaliser sur l’expérience</li>
-      </ul>
-
-      <p><strong>Programme (8h) :</strong></p>
-      <ul>
-        <li>Introduction & attentes (0h30)</li>
-        <li>Fondamentaux de l’événement musical (1h30)</li>
-        <li>Stratégie & planification (2h)</li>
-        <li>Communication & promotion (2h)</li>
-        <li>Immersion & évaluation (1h)</li>
-        <li>Clôture & attestation (1h)</li>
-      </ul>
     `
   };
 
