@@ -115,6 +115,42 @@ function openPopup(type) {
 
       <p><strong>Accessibilité :</strong><br>
       Formation accessible aux personnes en situation de handicap</p>
+    `,
+
+    boost: `
+      <h4>Organiser et concevoir un événement musical</h4>
+
+      <p><strong>Durée :</strong> 30 heures (4 jours)</p>
+      <p><strong>Format :</strong> Présentiel ou distanciel</p>
+      <p><strong>Public visé :</strong> Porteurs de projets, artistes, entrepreneurs culturels</p>
+      <p><strong>Prérequis :</strong> Aucun</p>
+
+      <p><strong>Objectifs pédagogiques :</strong></p>
+      <ul>
+        <li>Concevoir un événement musical</li>
+        <li>Structurer un projet artistique</li>
+        <li>Organiser la production et la logistique</li>
+        <li>Communiquer et promouvoir l’événement</li>
+        <li>Évaluer et pérenniser le projet</li>
+      </ul>
+
+      <p><strong>Programme :</strong></p>
+      <ul>
+        <li>Panorama des événements musicaux</li>
+        <li>Conception artistique et technique</li>
+        <li>Gestion des artistes et prestataires</li>
+        <li>Budget, production et billetterie</li>
+        <li>Communication et développement</li>
+      </ul>
+
+      <p><strong>Moyens pédagogiques :</strong><br>
+      Études de cas, supports numériques, mises en situation</p>
+
+      <p><strong>Modalités d’évaluation :</strong><br>
+      Projet de conception d’un événement musical</p>
+
+      <p><strong>Accessibilité :</strong><br>
+      Formation accessible aux personnes en situation de handicap – adaptation possible</p>
     `
   };
 
