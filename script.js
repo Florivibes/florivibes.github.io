@@ -118,7 +118,7 @@ function openPopup(type) {
 function closePopup() {
   const popup = document.getElementById("popup");
   if (!popup) return;
-
   popup.classList.add("hidden");
 }
+
 
