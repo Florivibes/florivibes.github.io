@@ -1,11 +1,3 @@
-function showFormations() {
-  const section = document.getElementById("formations-section");
-  if (!section) return;
-
-  section.classList.remove("hidden");
-  section.scrollIntoView({ behavior: "smooth" });
-}
-
 function openPopup(type) {
   const popup = document.getElementById("popup");
   const body = document.getElementById("popup-body");
@@ -66,15 +58,6 @@ function openPopup(type) {
         <li>Budgétisation</li>
         <li>Étude de cas pratique</li>
       </ul>
-
-      <p><strong>Moyens pédagogiques :</strong><br>
-      Supports numériques, études de cas, mises en situation</p>
-
-      <p><strong>Modalités d’évaluation :</strong><br>
-      Évaluation continue + étude de cas finale</p>
-
-      <p><strong>Accessibilité :</strong><br>
-      Formation accessible aux personnes en situation de handicap – adaptation possible</p>
     `,
 
     scene: `
@@ -100,15 +83,6 @@ function openPopup(type) {
         <li>Langage corporel</li>
         <li>Mises en situation filmées</li>
       </ul>
-
-      <p><strong>Moyens pédagogiques :</strong><br>
-      Exercices pratiques, vidéos, feedback personnalisé</p>
-
-      <p><strong>Modalités d’évaluation :</strong><br>
-      Mises en situation pratiques</p>
-
-      <p><strong>Accessibilité :</strong><br>
-      Formation accessible aux personnes en situation de handicap</p>
     `,
 
     com: `
@@ -134,15 +108,6 @@ function openPopup(type) {
         <li>Réseaux sociaux</li>
         <li>Relations presse</li>
       </ul>
-
-      <p><strong>Moyens pédagogiques :</strong><br>
-      Cas pratiques, supports numériques, projet final</p>
-
-      <p><strong>Modalités d’évaluation :</strong><br>
-      Projet de communication final</p>
-
-      <p><strong>Accessibilité :</strong><br>
-      Formation accessible aux personnes en situation de handicap</p>
     `
   };
 
@@ -156,3 +121,4 @@ function closePopup() {
 
   popup.classList.add("hidden");
 }
+
