@@ -5,13 +5,6 @@ function showFormations() {
   section.classList.remove("hidden");
   section.scrollIntoView({ behavior: "smooth" });
 }
-function showFormations() {
-  const section = document.getElementById("formations-section");
-  if (!section) return;
-
-  section.classList.remove("hidden");
-  section.scrollIntoView({ behavior: "smooth" });
-}
 
 function openPopup(type) {
   const popup = document.getElementById("popup");
