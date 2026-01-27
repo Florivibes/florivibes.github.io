@@ -118,39 +118,70 @@ function openPopup(type) {
     `,
 
     boost: `
-      <h4>Organiser et concevoir un événement musical</h4>
+      <h4>Plan de formation</h4>
 
-      <p><strong>Durée :</strong> 30 heures (4 jours)</p>
-      <p><strong>Format :</strong> Présentiel ou distanciel</p>
-      <p><strong>Public visé :</strong> Porteurs de projets, artistes, entrepreneurs culturels</p>
-      <p><strong>Prérequis :</strong> Aucun</p>
+      <p><strong>Titre :</strong> Organiser un événement musical</p>
+      <p><strong>Durée :</strong> 8 heures (1 journée)</p>
+      <p><strong>Format :</strong> en présentiel ou en ligne interactif</p>
+      <p><strong>Tarif proposé :</strong> 300 €/participant</p>
+      <p><strong>Public visé :</strong> artistes, managers, organisateurs d’événements, indépendants du secteur musical</p>
 
-      <p><strong>Objectifs pédagogiques :</strong></p>
+      <h4>🎯 Objectifs pédagogiques</h4>
+      <p>À l’issue de la formation, le stagiaire sera capable de :</p>
+      <ol>
+        <li>Définir clairement ses objectifs pour un événement musical ou une sortie d’album.</li>
+        <li>Construire un plan de communication efficace (avant, pendant, après).</li>
+        <li>Gérer les aspects pratiques de la production d’un événement (budget, lieux, équipe).</li>
+        <li>Créer un calendrier de production adapté à la sortie de l’album.</li>
+        <li>Évaluer les résultats de l’événement et capitaliser sur l’expérience.</li>
+      </ol>
+
+      <h4>📋 Programme détaillé (8 h)</h4>
+
+      <p><strong>🕐 Module 1 – Introduction (0h30)</strong></p>
       <ul>
-        <li>Concevoir un événement musical</li>
-        <li>Structurer un projet artistique</li>
-        <li>Organiser la production et la logistique</li>
-        <li>Communiquer et promouvoir l’événement</li>
-        <li>Évaluer et pérenniser le projet</li>
+        <li>Présentation de la formation et de ses objectifs</li>
+        <li>Attentes des participants</li>
+        <li>Tour de table rapide des projets personnels</li>
       </ul>
 
-      <p><strong>Programme :</strong></p>
+      <p><strong>🧭 Module 2 – Fondamentaux de l’événement musical (1h30)</strong></p>
       <ul>
-        <li>Panorama des événements musicaux</li>
-        <li>Conception artistique et technique</li>
-        <li>Gestion des artistes et prestataires</li>
-        <li>Budget, production et billetterie</li>
-        <li>Communication et développement</li>
+        <li>Types d’événements musicaux (concerts, showcases…)</li>
+        <li>Cadre légal et obligations basiques (assurances, sécurité)</li>
+        <li>Identification du public cible</li>
+      </ul>
+      <p><em>Méthode pédagogique : exposé + Q&A</em></p>
+
+      <p><strong>📅 Module 3 – Stratégie & planification (2h)</strong></p>
+      <ul>
+        <li>Définir la vision et les objectifs de l’événement</li>
+        <li>Construire un rétroplanning et un budget</li>
+        <li>Outils simples de gestion de projet</li>
+      </ul>
+      <p><em>Méthode : ateliers pratiques en petits groupes + livrables concrets</em></p>
+
+      <p><strong>📢 Module 4 – Communication & promotion (2h)</strong></p>
+      <ul>
+        <li>Stratégie de communication adaptée à une sortie d’album</li>
+        <li>Utilisation des réseaux sociaux, e-mailing, newsletters</li>
+        <li>Relations presse, partenariats locaux et médias</li>
+      </ul>
+      <p><em>Méthode : cas pratiques, exemples réels, outils à utiliser</em></p>
+
+      <p><strong>📊 Module 5 – Immersion & évaluation (1h)</strong></p>
+      <ul>
+        <li>Mise en situation / étude de cas</li>
+        <li>Retour d’expérience collaboratif</li>
+        <li>Évaluation sous forme de QCM ou livrable (plan de communication + planning)</li>
       </ul>
 
-      <p><strong>Moyens pédagogiques :</strong><br>
-      Études de cas, supports numériques, mises en situation</p>
-
-      <p><strong>Modalités d’évaluation :</strong><br>
-      Projet de conception d’un événement musical</p>
-
-      <p><strong>Accessibilité :</strong><br>
-      Formation accessible aux personnes en situation de handicap – adaptation possible</p>
+      <p><strong>🧾 Module 6 – Clôture (1h)</strong></p>
+      <ul>
+        <li>Synthèse des acquis</li>
+        <li>Feedback des participants</li>
+        <li>Remise d’une attestation de formation</li>
+      </ul>
     `
   };
 
@@ -164,4 +195,3 @@ function closePopup() {
 
   popup.classList.add("hidden");
 }
-
