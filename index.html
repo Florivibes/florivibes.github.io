@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Florivibes - Accueil</title>
+  <title>Accueil – Florivibes</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -21,43 +21,74 @@
 
 <main>
 
-  <!-- HERO ACCUEIL -->
-  <section class="hero hero-accueil">
-    <h2 class="hero-title">Bienvenue chez Florivibes</h2>
+  <!-- HERO -->
+  <section class="hero">
+    <h2 class="hero-title">Nos formations</h2>
     <p class="hero-subtitle">
-      Nous aidons les artistes et les entrepreneurs à développer leurs compétences en événementiel, communication et performance scénique.
+      Découvrez nos parcours complets pour développer vos compétences professionnelles et personnelles.
     </p>
   </section>
 
   <!-- NOS FORMATIONS -->
-  <section id="accueil" class="accueil">
+  <section id="formations">
     <h2>Nos formations</h2>
-    <p>Découvrez nos parcours complets pour développer vos compétences professionnelles et personnelles.</p>
+    <p>
+      Découvrez nos parcours complets pour développer vos compétences professionnelles et personnelles.
+    </p>
 
-    <div class="cards">
-      <button class="card" onclick="openPopup('boost')">
-        <h4>Organiser un événement musical</h4>
-        <p>8h • Présentiel / En ligne</p>
-      </button>
+    <div class="packs">
 
-      <button class="card" onclick="openPopup('event')">
-        <h4>Organisation événementielle</h4>
-        <p>35h • Présentiel / Distanciel</p>
-      </button>
+      <!-- Bouton doré -->
+      <a href="#evenementiel" class="pack-card gold-btn">
+        <div class="pack-badge gold">Formation Événementiel</div>
+        <p class="pack-desc">Une formation complète pour apprendre à organiser des événements, gérer la logistique, la communication et la production.</p>
+      </a>
 
-      <button class="card" onclick="openPopup('scene')">
-        <h4>Aptitude à la scène</h4>
-        <p>21h • Présentiel</p>
-      </button>
+      <!-- Les 3 autres groupes -->
+      <a href="#bien-etre" class="pack-card">
+        <div class="pack-badge">Beauté / Bien-être</div>
+        <p class="pack-desc">Développement personnel, soins, bien-être et techniques de relaxation.</p>
+      </a>
 
-      <button class="card" onclick="openPopup('com')">
-        <h4>Communication événementielle</h4>
-        <p>28h • Présentiel / Distanciel</p>
-      </button>
+      <a href="#art" class="pack-card">
+        <div class="pack-badge">Art</div>
+        <p class="pack-desc">Formations créatives : scène, musique, expression artistique et performance.</p>
+      </a>
+
+      <a href="#management" class="pack-card">
+        <div class="pack-badge">Coaching & Management</div>
+        <p class="pack-desc">Accompagnement, leadership, gestion de projet et développement d’équipe.</p>
+      </a>
+
     </div>
   </section>
 
+  <!-- EXEMPLE DE SECTIONS -->
+  <section id="evenementiel">
+    <h2>Arts & événementiel</h2>
+    <p>Ces formations couvrent événementiel, communication, scène et production.</p>
+  </section>
+
+  <section id="bien-etre">
+    <h2>Beauté / Bien-être</h2>
+    <p>Formations pour le bien-être, soins, relaxation et développement personnel.</p>
+  </section>
+
+  <section id="art">
+    <h2>Art</h2>
+    <p>Formations artistiques, musique, scène, expression créative.</p>
+  </section>
+
+  <section id="management">
+    <h2>Coaching & Management</h2>
+    <p>Formations en leadership, management, coaching et gestion d’équipe.</p>
+  </section>
+
 </main>
+
+<footer id="contact">
+  <p>© 2024 Florivibes</p>
+</footer>
 
 <!-- POPUP -->
 <div id="popup" class="popup hidden">
@@ -70,5 +101,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
-
