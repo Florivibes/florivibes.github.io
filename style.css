@@ -90,26 +90,6 @@ nav {
   margin: 20px auto;
 }
 
-/* ===== BOUTON (chrome) ===== */
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05));
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 0.2s ease, background 0.2s ease;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-}
-
-.btn:hover {
-  transform: translateY(-3px);
-  background: linear-gradient(135deg, rgba(255,255,255,0.35), rgba(255,255,255,0.12));
-}
-
 /* ===== SECTIONS ===== */
 section {
   padding: 60px 20px;
@@ -146,13 +126,13 @@ section p {
   color: #fff;
 }
 
-#workshops {
+#art {
   background: linear-gradient(135deg, #2d2d2d, #c8c8c8);
   color: #111;
 }
 
-/* ===== CARTES (style chrome) ===== */
-.cards {
+/* ===== PACKS ===== */
+.packs {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
@@ -160,31 +140,50 @@ section p {
   margin: auto;
 }
 
-.card {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+.pack-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 20px;
   border-radius: 14px;
-  padding: 25px 20px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(6px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
   color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
+.pack-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 18px 55px rgba(0, 0, 0, 0.55);
 }
 
-.card h4 {
-  font-size: 22px;
+.pack-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.25);
+  font-weight: 700;
   margin-bottom: 10px;
 }
 
-.card p {
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.8);
+.pack-badge.gold {
+  background: linear-gradient(135deg, #ffd700, #fff);
+  color: #111;
+}
+
+.pack-desc {
+  color: rgba(255,255,255,0.8);
+}
+
+/* ===== BOUTON DORÉ ===== */
+.gold-btn {
+  border: 1px solid rgba(255, 215, 0, 0.6);
+  background: linear-gradient(135deg, #ffd700, #fff);
+  color: #111;
+}
+
+.gold-btn .pack-badge {
+  background: transparent;
+  border: none;
 }
 
 /* ===== POPUP ===== */
@@ -204,7 +203,7 @@ section p {
   color: #333;
   padding: 32px;
   border-radius: 24px;
-  max-width: 600px;
+  max-width: 440px;
   width: 90%;
   position: relative;
   animation: pop 0.3s ease;
@@ -226,20 +225,6 @@ section p {
 /* ===== UTIL ===== */
 .hidden {
   display: none !important;
-}
-
-/* ===== SLIDE ===== */
-.slide {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: slideIn 0.7s forwards;
-}
-
-@keyframes slideIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* ===== FOOTER ===== */
