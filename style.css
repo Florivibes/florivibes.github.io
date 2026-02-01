@@ -187,57 +187,6 @@ section p {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* ===== PACKS ===== */
-.packs {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.pack-card {
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.2);
-  padding: 20px;
-  border-radius: 14px;
-}
-
-.pack-badge {
-  display: inline-block;
-  padding: 6px 12px;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.15);
-  border: 1px solid rgba(255,255,255,0.25);
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.pack-badge.gold {
-  background: linear-gradient(135deg, #ffd700, #fff);
-  color: #111;
-}
-
-.pack-desc {
-  color: rgba(255,255,255,0.8);
-}
-
-.pack-list li {
-  margin-bottom: 8px;
-}
-
-.pack-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 15px;
-}
-
-.pack-info {
-  font-size: 14px;
-  color: rgba(255,255,255,0.75);
-}
-
 /* ===== POPUP ===== */
 .popup {
   position: fixed;
@@ -255,7 +204,7 @@ section p {
   color: #333;
   padding: 32px;
   border-radius: 24px;
-  max-width: 440px;
+  max-width: 600px;
   width: 90%;
   position: relative;
   animation: pop 0.3s ease;
