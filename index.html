@@ -31,13 +31,17 @@
 
   <!-- NOS FORMATIONS -->
   <section id="formations">
-    <h2>Nos formations</h2>
-    <p>
-      Découvrez nos parcours complets pour développer vos compétences professionnelles et personnelles.
-    </p>
+    <h2>Formations</h2>
 
     <div class="packs">
 
+      <!-- Bouton doré (Formation Événementiel) -->
+      <button class="pack-card gold-btn" onclick="openPopup('evenementiel')">
+        <div class="pack-badge gold">FORMATION ÉVÉNEMENTIEL</div>
+        <p class="pack-desc">Une formation complète pour apprendre à organiser des événements, gérer la logistique, la communication et la production.</p>
+      </button>
+
+      <!-- 3 autres catégories en dessous -->
       <button class="pack-card" onclick="openPopup('bienetre')">
         <div class="pack-badge">Beauté / Bien-être</div>
         <p class="pack-desc">Développement personnel, soins, bien-être et techniques de relaxation.</p>
@@ -53,11 +57,6 @@
         <p class="pack-desc">Accompagnement, leadership, gestion de projet et développement d’équipe.</p>
       </button>
 
-      <button class="pack-card gold-btn" onclick="openPopup('evenementiel')">
-        <div class="pack-badge gold">Formation Événementiel</div>
-        <p class="pack-desc">Une formation complète pour apprendre à organiser des événements, gérer la logistique, la communication et la production.</p>
-      </button>
-
     </div>
   </section>
 
@@ -67,7 +66,7 @@
   <p>© 2024 Florivibes</p>
 </footer>
 
-<!-- POPUP : ATTENTION -->
+<!-- POPUP -->
 <div id="popup" class="popup hidden">
   <div class="popup-content">
     <span class="close" onclick="closePopup()">&times;</span>
