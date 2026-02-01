@@ -121,8 +121,10 @@ function closePopup() {
   popup.classList.add("hidden");
 }
 
-document.getElementById("popup").addEventListener("click", (e) => {
-  if (e.target.id === "popup") {
-    closePopup();
-  }
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("popup").addEventListener("click", (e) => {
+    if (e.target.id === "popup") {
+      closePopup();
+    }
+  });
 });
