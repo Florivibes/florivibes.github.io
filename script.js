@@ -7,7 +7,6 @@ function openPopup(type) {
   const programs = {
     boost: `
       <h4>Organiser un événement musical</h4>
-
       <p><strong>Durée :</strong> 8 heures (1 journée)</p>
       <p><strong>Format :</strong> Présentiel ou en ligne interactif</p>
       <p><strong>Tarif proposé :</strong> 300 €/participant</p>
@@ -32,10 +31,8 @@ function openPopup(type) {
         <li>Clôture & attestation (1h)</li>
       </ul>
     `,
-
     event: `
       <h4>Organisation événementielle</h4>
-
       <p><strong>Durée :</strong> 35 heures (5 jours)</p>
       <p><strong>Format :</strong> Présentiel ou distanciel</p>
       <p><strong>Public visé :</strong> Adultes en reconversion, salariés, entrepreneurs</p>
@@ -59,10 +56,8 @@ function openPopup(type) {
         <li>Étude de cas pratique</li>
       </ul>
     `,
-
     scene: `
       <h4>Aptitude à la scène</h4>
-
       <p><strong>Durée :</strong> 21 heures (3 jours)</p>
       <p><strong>Format :</strong> Présentiel</p>
       <p><strong>Public visé :</strong> Professionnels, artistes, entrepreneurs</p>
@@ -84,10 +79,8 @@ function openPopup(type) {
         <li>Mises en situation filmées</li>
       </ul>
     `,
-
     com: `
       <h4>Communication événementielle</h4>
-
       <p><strong>Durée :</strong> 28 heures (4 jours)</p>
       <p><strong>Format :</strong> Présentiel ou distanciel</p>
       <p><strong>Public visé :</strong> Chargés de communication, entrepreneurs</p>
@@ -128,3 +121,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
