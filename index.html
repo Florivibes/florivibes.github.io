@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formations – Florivibes</title>
+  <title>Florivibes - Accueil</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,8 +12,8 @@
 <header>
   <h1 class="logo">Florivibes</h1>
   <nav>
-    <a href="index.html" class="nav-link">Accueil</a>
-    <a href="formations.html" class="nav-link active">Formations</a>
+    <a href="index.html" class="nav-link active">Accueil</a>
+    <a href="formations.html" class="nav-link">Formations</a>
     <a href="entreprise.html" class="nav-link">Entreprise</a>
     <a href="#contact" class="nav-link">Contact</a>
   </nav>
@@ -21,18 +21,51 @@
 
 <main>
 
-  <!-- HERO FORMATIONS -->
-  <section class="hero hero-formations">
-    <h2 class="hero-title">Nos formations</h2>
+  <!-- HERO ACCUEIL -->
+  <section class="hero hero-accueil">
+    <h2 class="hero-title">Bienvenue chez Florivibes</h2>
     <p class="hero-subtitle">
-      Découvrez nos parcours complets pour développer vos compétences professionnelles et personnelles.
+      Nous aidons les artistes et les entrepreneurs à développer leurs compétences en événementiel, communication et performance scénique.
     </p>
   </section>
 
-  <!-- ARTS & ÉVÉNEMENTIEL -->
-  <section id="evenementiel">
-    <h2>Arts & événementiel</h2>
-    <p>Ces formations couvrent événementiel, communication, s
+  <!-- NOS FORMATIONS -->
+  <section id="accueil" class="accueil">
+    <h2>Nos formations</h2>
+    <p>Découvrez nos parcours complets pour développer vos compétences professionnelles et personnelles.</p>
 
+    <div class="cards">
+      <button class="card" onclick="openPopup('boost')">
+        <h3>Organiser un événement musical</h3>
+        <p>8h • Présentiel / En ligne</p>
+      </button>
 
-     
+      <button class="card" onclick="openPopup('event')">
+        <h3>Organisation événementielle</h3>
+        <p>35h • Présentiel / Distanciel</p>
+      </button>
+
+      <button class="card" onclick="openPopup('scene')">
+        <h3>Aptitude à la scène</h3>
+        <p>21h • Présentiel</p>
+      </button>
+
+      <button class="card" onclick="openPopup('com')">
+        <h3>Communication événementielle</h3>
+        <p>28h • Présentiel / Distanciel</p>
+      </button>
+    </div>
+  </section>
+
+</main>
+
+<!-- POPUP -->
+<div id="popup" class="hidden">
+  <div id="popup-body"></div>
+  <button class="close-btn" onclick="closePopup()">Fermer</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
