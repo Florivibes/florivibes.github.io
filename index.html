@@ -10,7 +10,6 @@
 <body data-header="assets/images/header-index.jpg">
 
 <header id="main-header">
-  <!-- L'image de header sera injectée ici via JS -->
   <h1 class="logo">Florivibes</h1>
   <nav>
     <a href="index.html" class="nav-link active">Accueil</a>
@@ -26,9 +25,8 @@
   <section class="hero">
     <h2 class="hero-title">Formations créatives & professionnelles ✨</h2>
     <p class="hero-subtitle">
-      Florivibes est un organisme de formation dédié aux adultes en reconversion,
-      aux entrepreneurs et aux professionnels souhaitant développer leurs compétences
-      dans l’événementiel, la communication et la prise de parole.
+      Florivibes accompagne les adultes en reconversion, entrepreneurs et professionnels
+      pour développer leurs compétences dans l’événementiel, la communication et le bien-être.
     </p>
 
     <a href="formations.html" class="btn">
@@ -36,37 +34,28 @@
     </a>
   </section>
 
-  <!-- APERÇU DES FORMATIONS -->
+  <!-- 3 CATÉGORIES -->
   <section class="formations">
-
-    <h3>Nos packs de formation</h3>
+    <h2 class="section-title">Trois univers de formation</h2>
+    <p class="section-subtitle">
+      Des parcours conçus pour révéler votre potentiel : créativité, bien-être et compétences professionnelles.
+    </p>
 
     <div class="cards">
-
-      <a href="formations.html" class="card">
-        <img src="assets/images/icone-developpement.png" alt="Événement musical" class="card-icon">
-        <h4>Organiser un événement musical</h4>
-        <p>Planifier, produire et promouvoir un événement musical.</p>
+      <a href="formations.html#evenementiel" class="card">
+        <h4>Arts & événementiel</h4>
+        <p>Événementiel, communication, scène, production.</p>
       </a>
 
-      <a href="formations.html" class="card">
-        <img src="assets/images/icone-evenement.png" alt="Événement" class="card-icon">
-        <h4>Organisation événementielle</h4>
-        <p>Concevoir et organiser un événement de A à Z</p>
+      <a href="formations.html#bien-etre" class="card">
+        <h4>Beauté & bien-être</h4>
+        <p>Beauté / Esthétique, hypnothérapie, coaching.</p>
       </a>
 
-      <a href="formations.html" class="card">
-        <img src="assets/images/icone-scene.png" alt="Scène" class="card-icon">
-        <h4>Aptitude à la scène</h4>
-        <p>Prise de parole, confiance et présence</p>
+      <a href="formations.html#management" class="card">
+        <h4>Coaching & management</h4>
+        <p>Coaching, management, développement professionnel.</p>
       </a>
-
-      <a href="formations.html" class="card">
-        <img src="assets/images/icone-com.png" alt="Communication" class="card-icon">
-        <h4>Communication événementielle</h4>
-        <p>Stratégie, réseaux sociaux, visibilité</p>
-      </a>
-
     </div>
   </section>
 
@@ -75,11 +64,10 @@
 <footer id="contact">
   <p>
     © 2024 Florivibes – Organisme de formation<br>
-    Une demande? L'équipe de Florivibes vous répond rapidement à l'adresse mail suivante : contact.florivibes@gmail.com
+    Contact : contact.florivibes@gmail.com
   </p>
 </footer>
 
-<!-- Script pour header différent par page -->
 <script>
   const header = document.getElementById('main-header');
   const imgSrc = document.body.getAttribute('data-header') || 'assets/images/header-default.jpg';
@@ -91,6 +79,8 @@
 </script>
 
 </body>
+</html>
+
 </html>
 
 
