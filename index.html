@@ -36,22 +36,22 @@
 
     <div class="cards">
       <button class="card" onclick="openPopup('boost')">
-        <h3>Organiser un événement musical</h3>
+        <h4>Organiser un événement musical</h4>
         <p>8h • Présentiel / En ligne</p>
       </button>
 
       <button class="card" onclick="openPopup('event')">
-        <h3>Organisation événementielle</h3>
+        <h4>Organisation événementielle</h4>
         <p>35h • Présentiel / Distanciel</p>
       </button>
 
       <button class="card" onclick="openPopup('scene')">
-        <h3>Aptitude à la scène</h3>
+        <h4>Aptitude à la scène</h4>
         <p>21h • Présentiel</p>
       </button>
 
       <button class="card" onclick="openPopup('com')">
-        <h3>Communication événementielle</h3>
+        <h4>Communication événementielle</h4>
         <p>28h • Présentiel / Distanciel</p>
       </button>
     </div>
@@ -60,12 +60,15 @@
 </main>
 
 <!-- POPUP -->
-<div id="popup" class="hidden">
-  <div id="popup-body"></div>
-  <button class="close-btn" onclick="closePopup()">Fermer</button>
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <div id="popup-body"></div>
+  </div>
 </div>
 
 <script src="script.js"></script>
 </body>
 </html>
+
 
