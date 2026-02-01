@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Florivibes – Organisme de formation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formations – Florivibes</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body data-header="assets/images/header-index.jpg">
+<body>
 
-<header id="main-header">
+<header>
   <h1 class="logo">Florivibes</h1>
   <nav>
-    <a href="index.html" class="nav-link active">Accueil</a>
-    <a href="formations.html" class="nav-link">Formations</a>
+    <a href="index.html" class="nav-link">Accueil</a>
+    <a href="formations.html" class="nav-link active">Formations</a>
     <a href="entreprise.html" class="nav-link">Entreprise</a>
     <a href="#contact" class="nav-link">Contact</a>
   </nav>
@@ -21,66 +21,18 @@
 
 <main>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h2 class="hero-title">Formations créatives & professionnelles ✨</h2>
+  <!-- HERO FORMATIONS -->
+  <section class="hero hero-formations">
+    <h2 class="hero-title">Nos formations</h2>
     <p class="hero-subtitle">
-      Florivibes est un organisme de formation dédié aux adultes en reconversion,
-      aux entrepreneurs et aux professionnels souhaitant développer leurs compétences
-      dans l’événementiel, la communication et la prise de parole.
+      Découvrez nos parcours complets pour développer vos compétences professionnelles et personnelles.
     </p>
-
-    <!-- BOUTON MODIFIÉ -->
-    <a href="formations.html#evenementiel" class="btn">
-      Découvrir nos formations en événementiel
-    </a>
   </section>
 
-  <!-- 3 CATÉGORIES -->
-  <section class="formations">
-    <h2 class="section-title">Trois univers de formation</h2>
-    <p class="section-subtitle">
-      Des parcours conçus pour révéler votre potentiel : créativité, bien-être et compétences professionnelles.
-    </p>
+  <!-- ARTS & ÉVÉNEMENTIEL -->
+  <section id="evenementiel">
+    <h2>Arts & événementiel</h2>
+    <p>Ces formations couvrent événementiel, communication, s
 
-    <div class="cards">
-      <a href="formations.html#evenementiel" class="card">
-        <h4>Arts & événementiel</h4>
-        <p>Événementiel, communication, scène, production.</p>
-      </a>
-
-      <a href="formations.html#bien-etre" class="card">
-        <h4>Beauté & bien-être</h4>
-        <p>Beauté / Esthétique, hypnothérapie, coaching.</p>
-      </a>
-
-      <a href="formations.html#management" class="card">
-        <h4>Coaching & management</h4>
-        <p>Coaching, management, développement professionnel.</p>
-      </a>
-    </div>
-  </section>
-
-</main>
-
-<footer id="contact">
-  <p>
-    © 2024 Florivibes – Organisme de formation<br>
-    Contact : contact.florivibes@gmail.com
-  </p>
-</footer>
-
-<script>
-  const header = document.getElementById('main-header');
-  const imgSrc = document.body.getAttribute('data-header') || 'assets/images/header-default.jpg';
-  const imgElement = document.createElement('img');
-  imgElement.src = imgSrc;
-  imgElement.alt = "Bannière";
-  imgElement.className = "header-image";
-  header.prepend(imgElement);
-</script>
-
-</body>
-</html>
 
      
