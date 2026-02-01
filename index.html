@@ -39,23 +39,23 @@
     <div class="packs">
 
       <!-- 3 catégories au-dessus -->
-      <a href="#bien-etre" class="pack-card">
+      <a href="#" class="pack-card" onclick="openPopup('beauty')">
         <div class="pack-badge">Beauté / Bien-être</div>
         <p class="pack-desc">Développement personnel, soins, bien-être et techniques de relaxation.</p>
       </a>
 
-      <a href="#art" class="pack-card">
+      <a href="#" class="pack-card" onclick="openPopup('art')">
         <div class="pack-badge">Art</div>
         <p class="pack-desc">Formations créatives : scène, musique, expression artistique et performance.</p>
       </a>
 
-      <a href="#management" class="pack-card">
+      <a href="#" class="pack-card" onclick="openPopup('coach')">
         <div class="pack-badge">Coaching & Management</div>
         <p class="pack-desc">Accompagnement, leadership, gestion de projet et développement d’équipe.</p>
       </a>
 
       <!-- Bouton doré (formation événementiel) -->
-      <a href="#evenementiel" class="pack-card gold-btn">
+      <a href="#" class="pack-card gold-btn" onclick="openPopup('event')">
         <div class="pack-badge gold">Formation Événementiel</div>
         <p class="pack-desc">Une formation complète pour apprendre à organiser des événements, gérer la logistique, la communication et la production.</p>
       </a>
@@ -63,32 +63,19 @@
     </div>
   </section>
 
-  <!-- SECTIONS -->
-  <section id="evenementiel">
-    <h2>Arts & événementiel</h2>
-    <p>Ces formations couvrent événementiel, communication, scène et production.</p>
-  </section>
-
-  <section id="bien-etre">
-    <h2>Beauté / Bien-être</h2>
-    <p>Formations pour le bien-être, soins, relaxation et développement personnel.</p>
-  </section>
-
-  <section id="art">
-    <h2>Art</h2>
-    <p>Formations artistiques, musique, scène, expression créative.</p>
-  </section>
-
-  <section id="management">
-    <h2>Coaching & Management</h2>
-    <p>Formations en leadership, management, coaching et gestion d’équipe.</p>
-  </section>
-
 </main>
 
 <footer id="contact">
   <p>© 2024 Florivibes</p>
 </footer>
+
+<!-- POPUP -->
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <div id="popup-body"></div>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
