@@ -1,7 +1,5 @@
 /* ===== BASE ===== */
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
@@ -19,14 +17,12 @@ body {
   animation: flow 14s ease infinite;
 }
 
-/* ===== ANIMATION FOND ===== */
 @keyframes flow {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* ===== PAILLETTES ===== */
 body::before {
   content: "";
   position: fixed;
@@ -37,7 +33,6 @@ body::before {
   opacity: 0.35;
 }
 
-/* ===== HEADER ===== */
 header {
   display: flex;
   justify-content: space-between;
@@ -47,16 +42,9 @@ header {
   backdrop-filter: blur(12px);
 }
 
-.logo {
-  font-size: 28px;
-  letter-spacing: 2px;
-}
+.logo { font-size: 28px; letter-spacing: 2px; }
 
-/* ===== NAV ===== */
-nav {
-  display: flex;
-  gap: 20px;
-}
+nav { display: flex; gap: 20px; }
 
 .nav-link {
   color: white;
@@ -71,29 +59,18 @@ nav {
   background: rgba(255,255,255,0.25);
 }
 
-.nav-link.active {
-  background: rgba(255,255,255,0.35);
-}
+.nav-link.active { background: rgba(255,255,255,0.35); }
 
-/* ===== HERO ===== */
 .hero {
   text-align: center;
   padding: 110px 20px 70px;
 }
 
-.hero-title {
-  font-size: 42px;
-}
+.hero-title { font-size: 42px; }
 
-.hero-subtitle {
-  max-width: 600px;
-  margin: 20px auto;
-}
+.hero-subtitle { max-width: 600px; margin: 20px auto; }
 
-/* ===== SECTIONS ===== */
-section {
-  padding: 60px 20px;
-}
+section { padding: 60px 20px; }
 
 section h2 {
   text-align: center;
@@ -110,28 +87,6 @@ section p {
   margin-right: auto;
 }
 
-/* ===== SECTIONS COLORÉES ===== */
-#evenementiel {
-  background: linear-gradient(135deg, #0b0b0b, #2c2c2c);
-  color: #fff;
-}
-
-#bien-etre {
-  background: linear-gradient(135deg, #1b1f3b, #4a4aa6);
-  color: #fff;
-}
-
-#management {
-  background: linear-gradient(135deg, #111111, #7a7a7a);
-  color: #fff;
-}
-
-#art {
-  background: linear-gradient(135deg, #2d2d2d, #c8c8c8);
-  color: #111;
-}
-
-/* ===== PACKS ===== */
 .packs {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -171,11 +126,8 @@ section p {
   color: #111;
 }
 
-.pack-desc {
-  color: rgba(255,255,255,0.8);
-}
+.pack-desc { color: rgba(255,255,255,0.8); }
 
-/* ===== BOUTON DORÉ ===== */
 .gold-btn {
   border: 1px solid rgba(255, 215, 0, 0.6);
   background: linear-gradient(135deg, #ffd700, #fff);
@@ -214,7 +166,6 @@ section p {
   max-width: 440px;
   width: 90%;
   position: relative;
-  animation: pop 0.3s ease;
 }
 
 .close {
@@ -225,12 +176,6 @@ section p {
   font-size: 26px;
 }
 
-@keyframes pop {
-  from { transform: scale(0.7); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
-}
-
-/* ===== FOOTER ===== */
 footer {
   text-align: center;
   padding: 20px;
