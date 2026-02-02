@@ -1,205 +1,129 @@
-/* ===== BASE ===== */
-html { scroll-behavior: smooth; }
+/* =========================
+   STYLE GLOBAL
+========================= */
 
 body {
   margin: 0;
-  font-family: Tahoma, Arial, sans-serif;
-  color: white;
-  overflow-x: hidden;
-
-  background:
-    radial-gradient(circle at 20% 20%, #f2c4d8, transparent 50%),
-    radial-gradient(circle at 80% 30%, #9fc6d3, transparent 50%),
-    radial-gradient(circle at 50% 80%, #f1d7b5, transparent 50%),
-    linear-gradient(135deg, #d6b27c, #f0c6d6, #b8d6e0, #d6b27c);
-
-  background-size: 400% 400%;
-  animation: flow 14s ease infinite;
-}
-
-@keyframes flow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background-image: radial-gradient(rgba(255,255,255,0.6) 1px, transparent 1px);
-  background-size: 120px 120px;
-  opacity: 0.35;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
 }
 
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background: rgba(255,255,255,0.12);
-  backdrop-filter: blur(12px);
+  justify-content: space-between;
+  padding: 18px 40px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
 }
 
-.logo { font-size: 28px; letter-spacing: 2px; }
-
-nav { display: flex; gap: 20px; }
-
-.nav-link {
-  color: white;
-  text-decoration: none;
-  padding: 8px 14px;
-  border-radius: 12px;
-  transition: transform 0.2s, background 0.2s;
+.logo {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+  color: #333;
 }
 
-.nav-link:hover {
-  transform: translateY(-2px) scale(1.06);
-  background: rgba(255,255,255,0.25);
-}
-
-.nav-link.active { background: rgba(255,255,255,0.35); }
-
-.hero {
-  text-align: center;
-  padding: 110px 20px 70px;
-}
-
-.hero-title { font-size: 42px; }
-
-.hero-subtitle { max-width: 600px; margin: 20px auto; }
-
-/* ===== LISTE FORMATIONS ===== */
-.formations-list {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 20px;
+nav {
   display: flex;
-  flex-direction: column;
   gap: 18px;
 }
 
-.formation-item {
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.25);
-  padding: 22px 18px;
-  border-radius: 18px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  transition: transform 0.2s ease, background 0.2s ease;
+.nav-link {
+  text-decoration: none;
+  color: #666;
+  font-weight: 600;
 }
 
-.formation-item:hover {
-  transform: translateY(-3px);
-  background: rgba(255,255,255,0.12);
+.nav-link.active {
+  color: #ff6fb8;
 }
 
-.formation-item h3 {
+/* BOUTON BROCHURE */
+.btn-brochure {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ff6fb8, #8f3dff);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-brochure:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-title {
+  font-size: 42px;
   margin: 0;
-  font-size: 20px;
+  color: #333;
+}
+
+.hero-subtitle {
+  margin: 10px auto 0;
+  max-width: 700px;
+  color: #666;
+}
+
+/* =========================
+   SLIDER SIMPLE
+========================= */
+.formations-list {
+  padding: 40px 20px;
+}
+
+.slider {
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  gap: 20px;
+  animation: scroll 20s linear infinite;
+}
+
+.formation-item {
+  min-width: 280px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #eee;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
 
 .small-btn {
-  border: 1px solid rgba(255,255,255,0.4);
-  background: rgba(255,255,255,0.1);
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: #ff6fb8;
   color: white;
-  padding: 10px 18px;
-  border-radius: 999px;
   font-weight: 700;
-  cursor: pointer;
-  transition: transform 0.2s ease, background 0.2s ease;
+  text-decoration: none;
 }
 
-.small-btn:hover {
-  background: rgba(255,255,255,0.25);
-  transform: translateY(-2px);
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
-/* ===== POPUP (VERSION FINALE) ===== */
-.hidden {
-  display: none !important;
-}
-
-.popup {
-  position: fixed;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 100;
-  background: transparent; /* le fond reste celui de la page */
-}
-
-.popup-content {
-  background: linear-gradient(135deg, #111, #222);
-  border-radius: 20px;
-  padding: 35px;
-  max-width: 500px;
-  width: 90%;
-  box-shadow: 0 0 40px rgba(255,255,255,0.2);
-  animation: popupAppear 0.4s ease;
-  position: relative;
-  text-align: center;
-}
-
-.popup-art-img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 18px;
-  margin-bottom: 18px;
-  border: 1px solid rgba(255,255,255,0.2);
-}
-
-/* Animation douce */
-@keyframes popupAppear {
-  from {
-    transform: scale(0.85);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-.close {
-  position: absolute;
-  top: 14px;
-  right: 18px;
-  cursor: pointer;
-  font-size: 26px;
-  color: white;
-}
-
-.popup-actions {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.popup-actions .btn {
-  border: 1px solid rgba(255,255,255,0.5);
-  background: rgba(255,255,255,0.1);
-  color: white;
-  padding: 12px 18px;
-  border-radius: 999px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-
-.popup-actions .btn:hover {
-  background: rgba(255,255,255,0.25);
-}
-
+/* =========================
+   FOOTER
+========================= */
 footer {
   text-align: center;
   padding: 20px;
-  background: rgba(255,255,255,0.12);
-  backdrop-filter: blur(12px);
+  background: #fff;
+  border-top: 1px solid #eee;
 }
