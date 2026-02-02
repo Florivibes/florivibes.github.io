@@ -1,20 +1,41 @@
-/* =========================
-   STYLE GLOBAL
-========================= */
-
+/* ---------- Base ---------- */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f7f7f7;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1c1c1c;
+  background: none; /* IMPORTANT : on garde le fond d'écran actuel */
 }
 
+/* Couche pour lisibilité */
+.background-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.55);
+  pointer-events: none;
+}
+
+/* ---------- Contenu ---------- */
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* =========================
+   HEADER
+========================= */
 header {
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 18px 40px;
-  background: #fff;
-  border-bottom: 1px solid #eee;
+  background: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  backdrop-filter: blur(6px);
 }
 
 .logo {
@@ -97,9 +118,9 @@ nav {
 .formation-item {
   min-width: 280px;
   padding: 30px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.75);
   border-radius: 20px;
-  border: 1px solid #eee;
+  border: 1px solid rgba(0,0,0,0.08);
   box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
 
@@ -124,6 +145,6 @@ nav {
 footer {
   text-align: center;
   padding: 20px;
-  background: #fff;
-  border-top: 1px solid #eee;
+  background: rgba(255, 255, 255, 0.7);
+  border-top: 1px solid rgba(0,0,0,0.08);
 }
