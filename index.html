@@ -11,12 +11,20 @@
 
 <header>
   <h1 class="logo">Florivibes</h1>
+
   <nav>
     <a href="index.html" class="nav-link active">Accueil</a>
     <a href="formations.html" class="nav-link">Formations</a>
     <a href="entreprise.html" class="nav-link">Entreprise</a>
     <a href="#contact" class="nav-link">Contact</a>
   </nav>
+
+  <!-- BOUTON BROCHURE -->
+  <a class="btn-brochure"
+     href="https://ldp.cesad.fr/ecp-formation-pm?utm_source=google&utm_medium=cpc&utm_campaign=20992380478&utm_content=689577532050&utm_term=devenir%20esth%C3%A9ticienne&adgroup=156801337845&matchtype=b&device=c&network=g&intent=&landing=&geo=&offer=&form=&formscore=&landing_abt=&audience=&source=gads&gad_source=1&gad_campaignid=20992380478&gbraid=0AAAAADoqAtUsA1NfVCMGMrBbnmHvLdgRa&gclid=CjwKCAiAs4HMBhBJEiwACrfNZT-nk4_9YmOkru3quY8BDxpAsKEy6YUR3zqJACtCiWwy-SAtCPTeDBoCBMMQAvD_BwE"
+     target="_blank" rel="noopener">
+     Recevoir la brochure
+  </a>
 </header>
 
 <main>
@@ -28,28 +36,47 @@
   </p>
 </section>
 
+<!-- SLIDER SIMPLE -->
 <section class="formations-list">
+  <div class="slider">
+    <div class="slider-track">
+      <div class="formation-item">
+        <h3>Formation Événementiel</h3>
+        <a class="small-btn"
+           href="https://ldp.cesad.fr/ecp-formation-pm"
+           target="_blank" rel="noopener">
+          Voir
+        </a>
+      </div>
 
-  <div class="formation-item" onclick="openPopup('evenementiel')">
-    <h3>Formation Événementiel</h3>
-    <button class="small-btn">Voir</button>
+      <div class="formation-item">
+        <h3>Formations Beauté & Bien-être</h3>
+        <a class="small-btn"
+           href="https://ldp.cesad.fr/ecp-formation-pm"
+           target="_blank" rel="noopener">
+          Voir
+        </a>
+      </div>
+
+      <div class="formation-item">
+        <h3>Formations des Arts et du Cinéma</h3>
+        <a class="small-btn"
+           href="https://ldp.cesad.fr/ecp-formation-pm"
+           target="_blank" rel="noopener">
+          Voir
+        </a>
+      </div>
+
+      <div class="formation-item">
+        <h3>Coaching & Management</h3>
+        <a class="small-btn"
+           href="https://ldp.cesad.fr/ecp-formation-pm"
+           target="_blank" rel="noopener">
+          Voir
+        </a>
+      </div>
+    </div>
   </div>
-
-  <div class="formation-item" onclick="openPopup('bienetre')">
-    <h3>Formations Beauté & Bien-être</h3>
-    <button class="small-btn">Voir</button>
-  </div>
-
-  <div class="formation-item" onclick="openPopup('art')">
-    <h3>Formations des Arts et du Cinéma</h3>
-    <button class="small-btn">Voir</button>
-  </div>
-
-  <div class="formation-item" onclick="openPopup('management')">
-    <h3>Coaching & Management</h3>
-    <button class="small-btn">Voir</button>
-  </div>
-
 </section>
 
 </main>
@@ -57,13 +84,6 @@
 <footer id="contact">
   <p>© 2024 Florivibes</p>
 </footer>
-
-<div id="popup" class="popup hidden">
-  <div class="popup-content">
-    <span class="close" onclick="closePopup()">×</span>
-    <div id="popup-body"></div>
-  </div>
-</div>
 
 <script src="script.js"></script>
 </body>
