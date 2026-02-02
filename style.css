@@ -3,10 +3,10 @@ body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   color: #1c1c1c;
-  background: none; /* IMPORTANT : on garde le fond d'écran actuel */
+  background: none; /* IMPORTANT : on garde le fond d'écran existant */
 }
 
-/* Couche pour lisibilité */
+/* Couche de lisibilité */
 .background-overlay {
   position: fixed;
   inset: 0;
@@ -14,21 +14,13 @@ body {
   pointer-events: none;
 }
 
-/* ---------- Contenu ---------- */
-.container {
-  position: relative;
-  z-index: 1;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-/* =========================
-   HEADER
-========================= */
+/* ---------- HEADER ---------- */
 header {
-  position: relative;
-  z-index: 2;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -78,12 +70,15 @@ nav {
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-/* =========================
-   HERO
-========================= */
+/* ---------- MAIN ---------- */
+main {
+  padding-top: 120px; /* pour laisser de l'espace sous le header */
+}
+
+/* ---------- HERO ---------- */
 .hero {
   text-align: center;
-  padding: 60px 20px;
+  padding: 80px 20px 40px;
 }
 
 .hero-title {
@@ -98,9 +93,7 @@ nav {
   color: #666;
 }
 
-/* =========================
-   SLIDER SIMPLE
-========================= */
+/* ---------- SLIDER ---------- */
 .formations-list {
   padding: 40px 20px;
 }
@@ -126,6 +119,7 @@ nav {
 
 .small-btn {
   display: inline-block;
+  margin-top: 20px;
   padding: 10px 16px;
   border-radius: 12px;
   background: #ff6fb8;
@@ -135,16 +129,4 @@ nav {
 }
 
 @keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-/* =========================
-   FOOTER
-========================= */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.7);
-  border-top: 1px solid rgba(0,0,0,0.08);
-}
+  0% { transform: translateX(0)
