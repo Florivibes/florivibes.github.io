@@ -21,44 +21,35 @@
 
 <main>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h2 class="hero-title">Nos formations</h2>
-    <p class="hero-subtitle">
-      Découvrez nos parcours complets pour développer vos compétences professionnelles et personnelles.
-    </p>
-  </section>
+<section class="hero">
+  <h2 class="hero-title">Nos formations</h2>
+  <p class="hero-subtitle">
+    Découvrez nos parcours complets pour développer vos compétences professionnelles et personnelles.
+  </p>
 
-  <!-- NOS FORMATIONS -->
-  <section id="formations">
-    <h2>Formations</h2>
+  <button class="gold-btn" onclick="openPopup('evenementiel')">
+    ✨ Formations Événementiel ✨
+  </button>
+</section>
 
-    <div class="packs">
+<section class="formations-grid">
 
-      <!-- Bouton doré (Formation Événementiel) -->
-      <button class="pack-card gold-btn" onclick="openPopup('evenementiel')">
-        <div class="pack-badge gold">FORMATION ÉVÉNEMENTIEL</div>
-        <p class="pack-desc">Une formation complète pour apprendre à organiser des événements, gérer la logistique, la communication et la production.</p>
-      </button>
+  <div class="formation-card black" onclick="openPopup('bienetre')">
+    <h3>Beauté & Bien-être</h3>
+    <span>Découvrir les formations →</span>
+  </div>
 
-      <!-- 3 autres catégories en dessous -->
-      <button class="pack-card" onclick="openPopup('bienetre')">
-        <div class="pack-badge">Beauté / Bien-être</div>
-        <p class="pack-desc">Développement personnel, soins, bien-être et techniques de relaxation.</p>
-      </button>
+  <div class="formation-card salmon" onclick="openPopup('art')">
+    <h3>Art</h3>
+    <span>Découvrir les formations →</span>
+  </div>
 
-      <button class="pack-card" onclick="openPopup('art')">
-        <div class="pack-badge">Art</div>
-        <p class="pack-desc">Formations créatives : scène, musique, expression artistique et performance.</p>
-      </button>
+  <div class="formation-card blue" onclick="openPopup('management')">
+    <h3>Coaching & Management</h3>
+    <span>Découvrir les formations →</span>
+  </div>
 
-      <button class="pack-card" onclick="openPopup('management')">
-        <div class="pack-badge">Coaching & Management</div>
-        <p class="pack-desc">Accompagnement, leadership, gestion de projet et développement d’équipe.</p>
-      </button>
-
-    </div>
-  </section>
+</section>
 
 </main>
 
@@ -66,10 +57,9 @@
   <p>© 2024 Florivibes</p>
 </footer>
 
-<!-- POPUP -->
 <div id="popup" class="popup hidden">
   <div class="popup-content">
-    <span class="close" onclick="closePopup()">&times;</span>
+    <span class="close" onclick="closePopup()">×</span>
     <div id="popup-body"></div>
   </div>
 </div>
@@ -77,3 +67,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
