@@ -3,143 +3,181 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formations – Florivibes</title>
+  <title>Nos Formations – Florivibes</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <h1 class="logo">Florivibes</h1>
-  <nav>
-    <a href="index.html" class="nav-link">Accueil</a>
-    <a href="formations.html" class="nav-link active">Formations</a>
-    <a href="entreprise.html" class="nav-link">Entreprise</a>
-    <a href="#contact" class="nav-link">Contact</a>
-  </nav>
-</header>
+  <!-- Overlay -->
+  <div class="background-overlay"></div>
 
-<main>
+  <!-- Header -->
+  <header>
+    <h1 class="logo">Florivibes</h1>
 
-  <!-- ====== HERO SUPPRIMÉE ====== -->
-  <!-- (Plus besoin de "Nos formations" ici) -->
+    <nav>
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="formations.html" class="nav-link active">Formations</a>
+      <a href="entreprise.html" class="nav-link">Entreprise</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
 
-  <!-- PACKS FORMATIONS -->
-  <section id="evenementiel">
-    <h2>Arts & événementiel</h2>
-    <p>Ces formations couvrent événementiel, communication, scène et production.</p>
+    <a class="btn-brochure" href="https://ldp.cesad.fr/ecp-formation-pm" target="_blank" rel="noopener">
+      Recevoir la brochure
+    </a>
+  </header>
 
-    <div class="packs cards">
+  <!-- Main -->
+  <main>
+    <section class="hero">
+      <h2 class="hero-title">Nos formations</h2>
+      <p class="hero-subtitle">
+        Découvrez tous nos parcours complets pour développer vos compétences professionnelles et personnelles.
+      </p>
+    </section>
 
-      <!-- PACK BOOST -->
-      <div class="card pack-card">
-        <div class="pack-badge">Pack BOOST</div>
-        <h3>Organiser un événement musical</h3>
-        <p class="pack-desc">
-          Planifier, produire et promouvoir un événement musical.
-        </p>
-
-        <ul class="pack-list">
-          <li>Objectifs & plan de communication</li>
-          <li>Production & logistique</li>
-          <li>Calendrier de sortie d’album</li>
-        </ul>
-
-        <div class="pack-footer">
-          <span class="pack-info">8h • 1 journée</span>
-          <button class="btn" onclick="openPopup('boost')">Voir le programme</button>
+    <!-- ---------- Beauté & Bien-être ---------- -->
+    <section class="formations-section">
+      <h3>✨ Beauté & Bien-être ✨</h3>
+      <div class="formations-grid">
+        <div class="formation-item">
+          <h4>Formation 1 : Maquillage professionnel</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
+        </div>
+        <div class="formation-item">
+          <h4>Formation 2 : Soins du visage</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
+        </div>
+        <div class="formation-item">
+          <h4>Formation 3 : Manucure & Nail Art</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
+        </div>
+        <div class="formation-item">
+          <h4>Formation 4 : Bien-être & relaxation</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
+        </div>
+        <div class="formation-item">
+          <h4>Formation 5 : Aromathérapie</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
         </div>
       </div>
+    </section>
 
-      <!-- PACK 1 -->
-      <div class="card pack-card">
-        <div class="pack-badge">Pack Essentiel</div>
-        <h3>Organisation événementielle</h3>
-        <p class="pack-desc">
-          Concevoir et piloter un événement professionnel de A à Z.
-        </p>
-
-        <ul class="pack-list">
-          <li>Conception & logistique</li>
-          <li>Budget & planning</li>
-          <li>Coordination des prestataires</li>
-        </ul>
-
-        <div class="pack-footer">
-          <span class="pack-info">35h • 5 jours</span>
-          <button class="btn" onclick="openPopup('event')">Voir le programme</button>
+    <!-- ---------- Arts & Cinéma ---------- -->
+    <section class="formations-section">
+      <h3>✨ Arts & Cinéma ✨</h3>
+      <div class="formations-grid">
+        <div class="formation-item">
+          <h4>Formation 1 : Dessin & peinture</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
+        </div>
+        <div class="formation-item">
+          <h4>Formation 2 : Photographie</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
+        </div>
+        <div class="formation-item">
+          <h4>Formation 3 : Cinéma & montage vidéo</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
+        </div>
+        <div class="formation-item">
+          <h4>Formation 4 : Dessin numérique</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
+        </div>
+        <div class="formation-item">
+          <h4>Formation 5 : Théâtre & mise en scène</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
         </div>
       </div>
+    </section>
 
-      <!-- PACK 2 -->
-      <div class="card pack-card featured">
-        <div class="pack-badge gold">Pack Signature</div>
-        <h3>Aptitude à la scène</h3>
-        <p class="pack-desc">
-          Développer son aisance orale et sa présence professionnelle.
-        </p>
-
-        <ul class="pack-list">
-          <li>Prise de parole</li>
-          <li>Voix & posture</li>
-          <li>Gestion du stress</li>
-        </ul>
-
-        <div class="pack-footer">
-          <span class="pack-info">21h • 3 jours</span>
-          <button class="btn" onclick="openPopup('scene')">Voir le programme</button>
+    <!-- ---------- Coaching & Management ---------- -->
+    <section class="formations-section">
+      <h3>✨ Coaching & Management ✨</h3>
+      <div class="formations-grid">
+        <div class="formation-item">
+          <h4>Formation 1 : Leadership efficace</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
+        </div>
+        <div class="formation-item">
+          <h4>Formation 2 : Gestion de projet agile</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
+        </div>
+        <div class="formation-item">
+          <h4>Formation 3 : Coaching d’équipe</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
+        </div>
+        <div class="formation-item">
+          <h4>Formation 4 : Communication professionnelle</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
+        </div>
+        <div class="formation-item">
+          <h4>Formation 5 : Gestion du stress et motivation</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
         </div>
       </div>
+    </section>
 
-      <!-- PACK 3 -->
-      <div class="card pack-card">
-        <div class="pack-badge">Pack Expert</div>
-        <h3>Communication événementielle</h3>
-        <p class="pack-desc">
-          Construire une stratégie de communication performante.
-        </p>
-
-        <ul class="pack-list">
-          <li>Branding & storytelling</li>
-          <li>Réseaux sociaux</li>
-          <li>Relations presse</li>
-        </ul>
-
-        <div class="pack-footer">
-          <span class="pack-info">28h • 4 jours</span>
-          <button class="btn" onclick="openPopup('com')">Voir le programme</button>
+    <!-- ---------- Événementiel ---------- -->
+    <section class="formations-section">
+      <h3>✨ Événementiel ✨</h3>
+      <div class="formations-grid">
+        <div class="formation-item">
+          <h4>Formation 1 : Organisation d’événements</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
+        </div>
+        <div class="formation-item">
+          <h4>Formation 2 : Gestion logistique</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
+        </div>
+        <div class="formation-item">
+          <h4>Formation 3 : Communication événementielle</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
+        </div>
+        <div class="formation-item">
+          <h4>Formation 4 : Marketing événementiel</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
+        </div>
+        <div class="formation-item">
+          <h4>Formation 5 : Événement responsable</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- ---------- Langues ---------- -->
+    <section class="formations-section">
+      <h3>✨ Langues ✨</h3>
+      <div class="formations-grid">
+        <div class="formation-item">
+          <h4>Formation 1 : Anglais professionnel</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
+        </div>
+        <div class="formation-item">
+          <h4>Formation 2 : Espagnol conversationnel</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
+        </div>
+        <div class="formation-item">
+          <h4>Formation 3 : Français langue étrangère</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
+        </div>
+        <div class="formation-item">
+          <h4>Formation 4 : Allemand débutant</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
+        </div>
+        <div class="formation-item">
+          <h4>Formation 5 : Italien intermédiaire</h4>
+          <a class="small-btn" href="#">Découvrir →</a>
+        </div>
+      </div>
+    </section>
 
-  <!-- BEAUTÉ & BIEN-ÊTRE -->
-  <section id="bien-etre">
-    <h2>Beauté & bien-être</h2>
-    <p>Formations en beauté / esthétique, hypnothérapie et coaching. Contenu à venir.</p>
-  </section>
+  </main>
 
-  <!-- COACHING & MANAGEMENT -->
-  <section id="management">
-    <h2>Coaching & management</h2>
-    <p>Formations en coaching, management et développement professionnel. Contenu à venir.</p>
-  </section>
+  <!-- Footer -->
+  <footer id="contact">
+    <p>© 2025 Florivibes</p>
+  </footer>
 
-</main>
-
-<footer id="contact">
-  <p>© 2024 Florivibes – Organisme de formation</p>
-</footer>
-
-<!-- POPUP PROGRAMME -->
-<div id="popup" class="popup hidden">
-  <div class="popup-content">
-    <span class="close" onclick="closePopup()">×</span>
-    <div id="popup-body"></div>
-  </div>
-</div>
-
-<script src="script.js"></script>
 </body>
 </html>
