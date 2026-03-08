@@ -3,19 +3,19 @@ body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   color: #1c1c1c;
-  background: none; /* garde ton fond d'écran */
+  background: none;
 }
 
-/* Couche de lisibilité */
+/* Overlay pour lisibilité */
 .background-overlay {
   position: fixed;
   inset: 0;
   background: rgba(255, 255, 255, 0.55);
   pointer-events: none;
-  z-index: -1; /* correction pour ne pas cacher le contenu */
+  z-index: -1;
 }
 
-/* ---------- HEADER ---------- */
+/* Header */
 header {
   position: fixed;
   width: 100%;
@@ -53,7 +53,7 @@ nav {
   color: #ff6fb8;
 }
 
-/* BOUTON BROCHURE */
+/* Bouton brochure */
 .btn-brochure {
   display: inline-block;
   padding: 12px 18px;
@@ -71,14 +71,14 @@ nav {
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-/* ---------- MAIN ---------- */
+/* Main */
 main {
   padding-top: 120px;
   position: relative;
-  z-index: 1; /* assure que le contenu reste au-dessus du fond */
+  z-index: 1;
 }
 
-/* ---------- HERO ---------- */
+/* Hero */
 .hero {
   text-align: center;
   padding: 80px 20px 40px;
@@ -96,13 +96,13 @@ main {
   color: #666;
 }
 
-/* ---------- SLIDER ---------- */
-.slider-track {
+/* ---------- Grille Formations ---------- */
+.formations-grid {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
-  flex-wrap: wrap; /* permet plusieurs lignes si écran petit */
-  justify-content: center; /* centre les cartes */
-  animation: none; /* plus de scroll automatique */
+  padding: 40px 20px;
 }
 
 .formation-item {
@@ -140,17 +140,10 @@ main {
   transform: translateY(-2px);
 }
 
-/* Animation adaptée pour 5 onglets */
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-20%); }
-}
-
-/* ---------- FOOTER ---------- */
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
   background: rgba(255, 255, 255, 0.7);
   border-top: 1px solid rgba(0,0,0,0.08);
 }
-
