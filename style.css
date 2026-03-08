@@ -23,9 +23,10 @@ header {
   left: 0;
   z-index: 10;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap; /* permet au contenu de passer à la ligne si écran petit */
+  align-items: center;
+  justify-content: center; /* centre menu + bouton */
+  gap: 20px;
   padding: 18px 20px;
   background: rgba(255, 255, 255, 0.7);
   border-bottom: 1px solid rgba(0,0,0,0.08);
@@ -33,6 +34,8 @@ header {
 }
 
 .logo {
+  flex: 1 1 100%;
+  text-align: center;
   margin: 0;
   font-size: 28px;
   font-weight: 800;
@@ -42,6 +45,8 @@ header {
 nav {
   display: flex;
   gap: 18px;
+  justify-content: center;
+  flex: 1 1 100%;
 }
 
 .nav-link {
@@ -65,13 +70,10 @@ nav {
   text-decoration: none;
   border: 2px solid #fff;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  margin-top: 10px; /* espace si bouton passe à la ligne */
+  margin-top: 10px; /* espace si passe à la ligne */
   white-space: nowrap; /* texte toujours visible */
-}
-
-.btn-brochure:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  flex: 1 1 100%;
+  text-align: center;
 }
 
 /* ---------- Main ---------- */
@@ -156,12 +158,9 @@ footer {
 @media (max-width: 768px) {
   header {
     flex-direction: column; /* éléments empilés verticalement */
-    align-items: flex-start;
-  }
-  .btn-brochure {
-    align-self: center; /* centrer le bouton sous le menu */
+    align-items: center;
   }
   nav {
-    margin-bottom: 10px; /* espace entre nav et bouton */
+    margin-bottom: 10px;
   }
 }
