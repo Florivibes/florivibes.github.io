@@ -18,35 +18,31 @@ body {
 /* ---------- Header ---------- */
 header {
   position: fixed;
-  width: 100%;
   top: 0;
   left: 0;
+  width: 100%;
   z-index: 10;
   display: flex;
-  flex-wrap: wrap; /* permet au contenu de passer à la ligne si écran petit */
   align-items: center;
-  justify-content: center; /* centre menu + bouton */
-  gap: 20px;
-  padding: 18px 20px;
+  justify-content: space-between; /* menu à gauche, bouton à droite */
+  padding: 18px 40px;
   background: rgba(255, 255, 255, 0.7);
   border-bottom: 1px solid rgba(0,0,0,0.08);
   backdrop-filter: blur(6px);
+  flex-wrap: wrap;
 }
 
 .logo {
-  flex: 1 1 100%;
-  text-align: center;
-  margin: 0;
   font-size: 28px;
   font-weight: 800;
   color: #333;
+  flex: 1 1 auto;
 }
 
 nav {
   display: flex;
   gap: 18px;
-  justify-content: center;
-  flex: 1 1 100%;
+  flex: 1 1 auto;
 }
 
 .nav-link {
@@ -59,7 +55,7 @@ nav {
   color: #ff6fb8;
 }
 
-/* Bouton brochure */
+/* Bouton brochure corrigé : toujours à droite */
 .btn-brochure {
   display: inline-block;
   padding: 12px 18px;
@@ -70,10 +66,14 @@ nav {
   text-decoration: none;
   border: 2px solid #fff;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  margin-top: 10px; /* espace si passe à la ligne */
-  white-space: nowrap; /* texte toujours visible */
-  flex: 1 1 100%;
-  text-align: center;
+  white-space: nowrap;
+  flex: 0 0 auto;  /* garde taille naturelle */
+}
+
+/* Bouton hover */
+.btn-brochure:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
 /* ---------- Main ---------- */
@@ -128,7 +128,6 @@ main {
   box-shadow: 0 18px 35px rgba(0,0,0,0.12);
 }
 
-/* Boutons formations */
 .small-btn {
   display: inline-block;
   margin-top: 20px;
@@ -157,10 +156,14 @@ footer {
 /* ---------- Responsive ---------- */
 @media (max-width: 768px) {
   header {
-    flex-direction: column; /* éléments empilés verticalement */
+    flex-direction: column;
     align-items: center;
   }
   nav {
     margin-bottom: 10px;
+    justify-content: center;
+  }
+  .btn-brochure {
+    margin-top: 10px;
   }
 }
