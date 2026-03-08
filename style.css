@@ -97,27 +97,24 @@ main {
 }
 
 /* ---------- SLIDER ---------- */
-.formations-list {
-  padding: 40px 20px;
-}
-
-.slider {
-  overflow: hidden;
-}
-
 .slider-track {
   display: flex;
   gap: 20px;
-  animation: scroll 25s linear infinite; /* animation plus douce */
+  flex-wrap: wrap; /* permet plusieurs lignes si écran petit */
+  justify-content: center; /* centre les cartes */
+  animation: none; /* plus de scroll automatique */
 }
 
 .formation-item {
-  min-width: 280px;
+  min-width: 250px;
+  max-width: 280px;
   padding: 30px;
-  background: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.85);
   border-radius: 20px;
   border: 1px solid rgba(0,0,0,0.08);
   box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+  text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
