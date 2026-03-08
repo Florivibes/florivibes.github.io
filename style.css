@@ -12,6 +12,7 @@ body {
   inset: 0;
   background: rgba(255, 255, 255, 0.55);
   pointer-events: none;
+  z-index: -1; /* correction pour ne pas cacher le contenu */
 }
 
 /* ---------- HEADER ---------- */
@@ -73,6 +74,8 @@ nav {
 /* ---------- MAIN ---------- */
 main {
   padding-top: 120px;
+  position: relative;
+  z-index: 1; /* assure que le contenu reste au-dessus du fond */
 }
 
 /* ---------- HERO ---------- */
@@ -105,16 +108,22 @@ main {
 .slider-track {
   display: flex;
   gap: 20px;
-  animation: scroll 20s linear infinite;
+  animation: scroll 25s linear infinite; /* animation plus douce */
 }
 
 .formation-item {
   min-width: 280px;
   padding: 30px;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
   border: 1px solid rgba(0,0,0,0.08);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.formation-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.12);
 }
 
 .small-btn {
@@ -126,11 +135,18 @@ main {
   color: white;
   font-weight: 700;
   text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
+.small-btn:hover {
+  background: #ff4da6;
+  transform: translateY(-2px);
+}
+
+/* Animation adaptée pour 5 onglets */
 @keyframes scroll {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  100% { transform: translateX(-20%); }
 }
 
 /* ---------- FOOTER ---------- */
