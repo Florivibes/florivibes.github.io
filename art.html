@@ -1,7 +1,74 @@
-Formations Artistiques
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arts & Cinéma – Florivibes</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Fond spécifique pour Arts & Cinéma */
+    body {
+      background-image: url('images/fond-art.jpg'); /* remplace par ton image */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
 
-1. Dessin et illustration
-2. Peinture contemporaine
-3. Art numérique
-4. Création artistique
-5. Techniques mixtes
+    /* Boutons remplis */
+    .small-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 16px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #6f42ff, #ff42c1);
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .small-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+      background: linear-gradient(135deg, #854cff, #ff5ec9);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background-overlay"></div>
+
+  <header>
+    <h1 class="logo">Florivibes</h1>
+    <nav>
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="art.html" class="nav-link active">Formations</a>
+      <a href="entreprise.html" class="nav-link">Entreprise</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2 class="hero-title">Arts & Cinéma</h2>
+      <p class="hero-subtitle">Découvrez nos parcours créatifs pour exprimer votre talent :</p>
+    </section>
+
+    <section class="formations-list">
+      <div class="formations-grid">
+
+        <div class="formation-item"><h3>Dessin & peinture</h3><a class="small-btn" href="#">Découvrir →</a></div>
+        <div class="formation-item"><h3>Photographie</h3><a class="small-btn" href="#">Découvrir →</a></div>
+        <div class="formation-item"><h3>Cinéma & montage vidéo</h3><a class="small-btn" href="#">Découvrir →</a></div>
+        <div class="formation-item"><h3>Dessin numérique</h3><a class="small-btn" href="#">Découvrir →</a></div>
+        <div class="formation-item"><h3>Théâtre & mise en scène</h3><a class="small-btn" href="#">Découvrir →</a></div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>© 2025 Florivibes</p>
+  </footer>
+</body>
+</html>
