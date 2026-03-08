@@ -1,7 +1,74 @@
-Formations Événementiel
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Événementiel – Florivibes</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Fond spécifique pour Événementiel */
+    body {
+      background-image: url('images/fond-evenementiel.jpg'); /* remplace par ton image */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
 
-1. Organisation d'événements
-2. Décoration événementielle
-3. Gestion de projet événementiel
-4. Marketing événementiel
-5. Coordination logistique
+    /* Boutons remplis personnalisés */
+    .small-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 16px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #ff7f50, #ffb347); /* couleurs chaudes */
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .small-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+      background: linear-gradient(135deg, #ff8a65, #ffc17d);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background-overlay"></div>
+
+  <header>
+    <h1 class="logo">Florivibes</h1>
+    <nav>
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="evenementiel.html" class="nav-link active">Formations</a>
+      <a href="entreprise.html" class="nav-link">Entreprise</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2 class="hero-title">Événementiel</h2>
+      <p class="hero-subtitle">Découvrez nos formations pour organiser des événements inoubliables :</p>
+    </section>
+
+    <section class="formations-list">
+      <div class="formations-grid">
+
+        <div class="formation-item"><h3>Organisation d’événements</h3><a class="small-btn" href="#">Découvrir →</a></div>
+        <div class="formation-item"><h3>Gestion logistique</h3><a class="small-btn" href="#">Découvrir →</a></div>
+        <div class="formation-item"><h3>Communication événementielle</h3><a class="small-btn" href="#">Découvrir →</a></div>
+        <div class="formation-item"><h3>Marketing événementiel</h3><a class="small-btn" href="#">Découvrir →</a></div>
+        <div class="formation-item"><h3>Événement responsable</h3><a class="small-btn" href="#">Découvrir →</a></div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>© 2025 Florivibes</p>
+  </footer>
+</body>
+</html>
