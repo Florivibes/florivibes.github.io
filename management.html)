@@ -9,7 +9,7 @@
 
 <body>
 
-  <!-- Overlay -->
+  <!-- Overlay pour lisibilité -->
   <div class="background-overlay"></div>
 
   <!-- Header -->
@@ -39,34 +39,30 @@
       </p>
     </section>
 
-    <section class="formations-list">
-      <div class="formations-grid">
+    <section class="formations-grid">
+      <div class="formation-item">
+        <h3>Formation 1 : Leadership efficace</h3>
+        <a class="small-btn" href="#">Découvrir →</a>
+      </div>
 
-        <div class="formation-item">
-          <h3>Formation 1 : Leadership efficace</h3>
-          <a class="small-btn" href="#">Découvrir →</a>
-        </div>
+      <div class="formation-item">
+        <h3>Formation 2 : Gestion de projet agile</h3>
+        <a class="small-btn" href="#">Découvrir →</a>
+      </div>
 
-        <div class="formation-item">
-          <h3>Formation 2 : Gestion de projet agile</h3>
-          <a class="small-btn" href="#">Découvrir →</a>
-        </div>
+      <div class="formation-item">
+        <h3>Formation 3 : Coaching d’équipe</h3>
+        <a class="small-btn" href="#">Découvrir →</a>
+      </div>
 
-        <div class="formation-item">
-          <h3>Formation 3 : Coaching d’équipe</h3>
-          <a class="small-btn" href="#">Découvrir →</a>
-        </div>
+      <div class="formation-item">
+        <h3>Formation 4 : Communication professionnelle</h3>
+        <a class="small-btn" href="#">Découvrir →</a>
+      </div>
 
-        <div class="formation-item">
-          <h3>Formation 4 : Communication professionnelle</h3>
-          <a class="small-btn" href="#">Découvrir →</a>
-        </div>
-
-        <div class="formation-item">
-          <h3>Formation 5 : Gestion du stress et motivation</h3>
-          <a class="small-btn" href="#">Découvrir →</a>
-        </div>
-
+      <div class="formation-item">
+        <h3>Formation 5 : Gestion du stress et motivation</h3>
+        <a class="small-btn" href="#">Découvrir →</a>
       </div>
     </section>
   </main>
