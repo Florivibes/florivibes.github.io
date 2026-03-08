@@ -5,13 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Langues – Florivibes</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Fond spécifique pour Langues */
+    body {
+      background-image: url('images/fond-langues.jpg'); /* remplace par ton image */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    /* Boutons remplis pour chaque formation */
+    .small-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 16px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #42aaff, #42ffb8);
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .small-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+      background: linear-gradient(135deg, #66baff, #66ffc8);
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Overlay -->
   <div class="background-overlay"></div>
 
-  <!-- Header -->
   <header>
     <h1 class="logo">Florivibes</h1>
     <nav>
@@ -23,34 +49,7 @@
     <a class="btn-brochure" href="https://ldp.cesad.fr/ecp-formation-pm" target="_blank" rel="noopener">Recevoir la brochure</a>
   </header>
 
-  <!-- Main -->
   <main>
     <section class="hero">
       <h2 class="hero-title">Langues</h2>
-      <p class="hero-subtitle">Découvrez nos 5 formations phares :</p>
-    </section>
-
-    <section class="formations-list">
-      <div class="formations-grid">
-
-        <div class="formation-item"><h3>Anglais Professionnel</h3></div>
-        <div class="formation-item"><h3>Anglais des affaires </h3></div>
-        <div class="formation-item"><h3>Anglais Conversation</h3></div>
-        
-        <div class="formation-item"><h3>Espagnol des affaires</h3></div>
-        <div class="formation-item"><h3>Français pour non-francophones</h3></div>
-        <div class="formation-item"><h3>Allemand Intermédiaire</h3></div>
-        <div class="formation-item"><h3>Italien Conversation</h3></div>
-        <div class="formation-item"><h3>Dutch Conversation</h3></div>
-
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer id="contact">
-    <p>© 2025 Florivibes</p>
-  </footer>
-
-</body>
-</html>
+      <p class="hero-subtitle">Découvrez nos parcours linguistiques phares :</p
